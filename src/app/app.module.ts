@@ -8,6 +8,7 @@ import { routing }        from './app.routing';
 import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent }  from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
+import { HomeComponent } from './home.component';
 
 import { HeroService }  from './hero.service';
 
@@ -21,7 +22,8 @@ import { HeroService }  from './hero.service';
     AppComponent,
     HeroesComponent,
     DashboardComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    HomeComponent
   ],
   providers: [
     HeroService
