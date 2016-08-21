@@ -1,0 +1,16 @@
+/* TEAM */
+	Web developer/designer:Giorgio Mazzei
+	Contact: giorgio.mazzei@imaginaria.london
+	From:London, UK
+
+    Graphic Designer: Ruiyun Jiang
+    contact: info@ruiyun.uk
+    website:www.ruiyun.uk
+	From:London, UK
+
+/* SITE */
+	Last update:2016/05/28
+	Language: English
+	Doctype:HTML5
+	Editor: Atom
+	Graphic Software: Affinity Design, Affinity Photo, Photoshop, Illustrator

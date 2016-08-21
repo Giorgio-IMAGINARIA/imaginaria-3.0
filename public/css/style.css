@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*Reset CSS*/
+/* --------------------------------------- */
+
+html, body, my-app, my-home{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0px;
+    background:#ffffff;
+    position:fixed;
+}
+
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+html, html a {
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+/*Fonts*/
+/* --------------------------------------- */
+
+.font-Roboto-L{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.font-Roboto-B{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.font-Lato-L{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.font-Economica-N{
+    font-family: 'Economica', sans-serif;
+    font-weight: 400;
+}
+
+/*Flexboxes*/
+/* --------------------------------------- */
+
+.flexContainer{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flexContainerColumn{
+    -webkit-box-direction: reverse;
+    -moz-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexContainerRow{
+    box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;      /* Mozilla */
+    -webkit-box-orient: horizontal;   /* WebKit */
+    box-orient: horizontal;           /* As specified */
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexContainerColumnHAlignCenter{
+    -webkit-box-align: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-align: center;     /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-align: center;  /* TWEENER - IE 10 */
+    -webkit-align-items: center;  /* NEW - Chrome */
+    align-items: center;
+}
+
+.flexContainerRowHAlignCenter{
+    -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: center;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: center;  /* TWEENER - IE 10 */
+    -webkit-justify-content: center;  /* NEW - Chrome */
+    justify-content: center;
+}
+.flexContainerRowHAlignSpaceAround{
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.flexContainerRowVAlignCenter{
+    -webkit-box-align: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-align: center;     /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-align: center;  /* TWEENER - IE 10 */
+    -webkit-align-items: center;  /* NEW - Chrome */
+    align-items: center;
+}
+
+.flexContainerColumnVAlignCenter{
+    -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: center;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: center;  /* TWEENER - IE 10 */
+    -webkit-justify-content: center;  /* NEW - Chrome */
+    justify-content: center;
+}
+
+.flexContainerColumnSpaceBetween{
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+/*App Wrapper*/
+/* --------------------------------------- */

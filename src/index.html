@@ -1,18 +1,106 @@
 <html>
-  <head>
-    <base href="/">
 
-      <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
-    
-    <title>Angular With Webpack</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../public/css/styles.css">
-  </head>
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+<head>
+  <base href="/">
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <title>IMAGINARIA.london</title>
+  <meta name="description" content="IMAGINARIA - Soft Illusions - Giorgio Mazzei's web developer portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <link rel="stylesheet" href="../public/css/styles.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 1280px)" href="../public/css/Home/desktop.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape)"
+    href="../public/css/Home/tablets-landscape.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait)"
+    href="../public/css/Home/tablets-portrait.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 736px) and (max-width:1023px) and (orientation:landscape)"
+    href="../public/css/Home/mobiles-landscape.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait)"
+    href="../public/css/Home/mobiles-portrait.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width:735px) and (orientation:landscape)" href="../public/css/Home/small-mobiles-landscape.css"
+  />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width:413px) and (orientation:portrait)" href="../public/css/Home/small-mobiles-portrait.css"
+  />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../public/favicon/apple-touch-icon-57x57.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="60x60" href="../public/favicon/apple-touch-icon-60x60.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="72x72" href="../public/favicon/apple-touch-icon-72x72.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="76x76" href="../public/favicon/apple-touch-icon-76x76.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="114x114" href="../public/favicon/apple-touch-icon-114x114.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="120x120" href="../public/favicon/apple-touch-icon-120x120.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="144x144" href="../public/favicon/apple-touch-icon-144x144.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="152x152" href="../public/favicon/apple-touch-icon-152x152.png?v=lkkdRBWXKl">
+  <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon-180x180.png?v=lkkdRBWXKl">
+  <link rel="icon" type="image/png" href="../public/favicon/favicon-32x32.png?v=lkkdRBWXKl" sizes="32x32">
+  <link rel="icon" type="image/png" href="../public/favicon/favicon-194x194.png?v=lkkdRBWXKl" sizes="194x194">
+  <link rel="icon" type="image/png" href="../public/favicon/favicon-96x96.png?v=lkkdRBWXKl" sizes="96x96">
+  <link rel="icon" type="image/png" href="../public/favicon/android-chrome-192x192.png?v=lkkdRBWXKl" sizes="192x192">
+  <link rel="icon" type="image/png" href="../public/favicon/favicon-16x16.png?v=lkkdRBWXKl" sizes="16x16">
+  <link rel="manifest" href="../public/favicon/manifest.json?v=lkkdRBWXKl">
+  <link rel="shortcut icon" href="../public/favicon/favicon.ico?v=lkkdRBWXKl">
+  <meta name="apple-mobile-web-app-title" content="Imaginaria">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="application-name" content="Imaginaria">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="../public/favicon/mstile-144x144.png?v=lkkdRBWXKl">
+  <meta name="msapplication-config" content="../public/favicon/browserconfig.xml?v=lkkdRBWXKl">
+  <meta name="theme-color" content="#009999">
+
+  <!-- Humans -->
+  <link rel="author" href="../public/humans.txt">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="">
+
+  <!-- Outdated Browser Warning -->
+  <script>
+      var $buoop = {c:2};
+      function $buo_f(){
+          var e = document.createElement("script");
+          e.src = "//browser-update.org/update.min.js";
+          document.body.appendChild(e);
+      };
+      try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+      catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+
+</head>
+
+<body>
+  <my-app>Loading...</my-app>
+  <!-- JQuery -->
+  <script src="../public/Add-Ons/JQuery-2.1.4/jquery-2.1.4.js"></script>
+
+  <!-- TweenLite -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+
+  <!-- Velocity -->
+  <script src="../public/Add-Ons/Velocity-1.2.2/velocity-1.2.2.js"></script>
+
+  <!-- MouseWheel -->
+  <script src="../public/Add-Ons/MouseWheel/jquery.mousewheel.min.js"></script>
+
+  <!-- TouchSwipe -->
+  <script src="../public/Add-Ons/TouchSwipe/jquery.touchSwipe.min.js"></script>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="../public/Javascript/general.js"></script>
+
+</body>
+
 </html>
