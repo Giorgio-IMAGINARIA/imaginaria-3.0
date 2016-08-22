@@ -3,7 +3,7 @@ import { Component} from '@angular/core';
 @Component({
   selector: 'windmillRed',
   templateUrl: './windmillRed.component.html',
-  styleUrls: ['../../public/css/Home/windmillRed.css'],
+  styles: [require('../../public/css/Home/windmillRed.css').toString()]
 })
 export class WindmillRedComponent {
 }

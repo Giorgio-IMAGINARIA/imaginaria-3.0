@@ -1,19 +1,19 @@
 import { Renderer, ViewChild, ViewChildren, AfterViewInit, Component, OnInit, ElementRef, trigger, state, style, transition, animate } from '@angular/core';
 import { Router } from '@angular/router';
-// import {WindmillBlueComponent} from './windmillBlue.component.ts';
-// import {WindmillRedComponent} from './windmillRed.component.ts';
-// import {WindmillWhiteComponent} from './windmillWhite.component.ts';
-// import {MbiLogoComponent} from './mbiLogo.component.ts';
-// import {GitHubLogoComponent} from './gitHubLogo.component.ts';
-// import {LinkedInLogoComponent} from './linkedInLogo.component.ts';
-// import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
-// import {ProjectToRenderComponent} from './projectToRender.component.ts';
+import {WindmillBlueComponent} from './windmillBlue.component.ts';
+import {WindmillRedComponent} from './windmillRed.component.ts';
+import {WindmillWhiteComponent} from './windmillWhite.component.ts';
+import {MbiLogoComponent} from './mbiLogo.component.ts';
+import {GitHubLogoComponent} from './gitHubLogo.component.ts';
+import {LinkedInLogoComponent} from './linkedInLogo.component.ts';
+import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
+import {ProjectToRenderComponent} from './projectToRender.component.ts';
 
 @Component({
     selector: 'my-home',
     templateUrl: 'home.component.html',
     styles: [require('../../public/css/Home/general.css').toString()],
-    // directives: [WindmillBlueComponent, WindmillRedComponent, WindmillWhiteComponent, MbiLogoComponent, GitHubLogoComponent, LinkedInLogoComponent, FaceBookLogoComponent, ProjectToRenderComponent],
+    directives: [WindmillBlueComponent, WindmillRedComponent, WindmillWhiteComponent, MbiLogoComponent, GitHubLogoComponent, LinkedInLogoComponent, FaceBookLogoComponent, ProjectToRenderComponent],
     animations: [
         trigger('mask', [
             state('inactive', style({

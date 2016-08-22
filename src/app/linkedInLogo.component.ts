@@ -3,7 +3,7 @@ import { Component} from '@angular/core';
 @Component({
   selector: 'linkedInLogo',
   templateUrl: './linkedInLogo.component.html',
-  styleUrls: ['../../public/css/Home/linkedInLogo.css'],
+        styles: [require('../../public/css/Home/linkedInLogo.css').toString()]
 })
 export class LinkedInLogoComponent {
 }

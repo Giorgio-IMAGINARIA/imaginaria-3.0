@@ -194,13 +194,13 @@ The stripes in the hamburger button
 }
 
 #section0{
-    background-image: url(../../Pics/DPics/background1.jpg);
+    background-image: url(../../images/DPics/background1.jpg);
 }
 #section1{
-    background-image: url(../../Pics/DPics/background2.jpg);
+    background-image: url(../../images/DPics/background2.jpg);
 }
 #section2{
-    background-image: url(../../Pics/DPics/background3.jpg);
+    background-image: url(../../images/DPics/background3.jpg);
 }
 #rightMenu{
     right:-250px;
