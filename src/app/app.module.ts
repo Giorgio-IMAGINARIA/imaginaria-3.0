@@ -9,7 +9,6 @@ import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent }  from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HomeComponent } from './home.component';
-import { HeaderSide } from './headerSide.component';
 
 import { HighlightDirective } from './highlight.directive';
 
@@ -27,8 +26,7 @@ import { HeroService }  from './hero.service';
     DashboardComponent,
     HeroDetailComponent,
     HomeComponent,
-    HighlightDirective,
-    HeaderSide
+    HighlightDirective
   ],
   providers: [
     HeroService
