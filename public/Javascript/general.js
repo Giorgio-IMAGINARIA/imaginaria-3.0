@@ -18,9 +18,6 @@ $(document).ready(function () {
     var mov=false;
     var slideTwice=false;
     var trans=800;
-    var transmenu=400;
-    var transHoverMenu=0.1;
-    var transHoverLogo=1;
     var eas="cubic-bezier(1,0,0,1)";
     var easmenu="ease-in";
     var wh;
@@ -35,22 +32,26 @@ $(document).ready(function () {
 
 
 
-    function pulse(el){
-        var tl = new TimelineLite();
-        tl.to(el, transHoverMenu, {scale:1.3}).to(el, transHoverMenu, {scale:1});
-    };
-    function rotate(el, am){
-        TweenLite.to(el, transHoverLogo, {rotation:"" + am +"deg"});
-    }
+  
 
-    $("#hamburger").mouseenter(function(){pulse(this);});
-    $("#hamburgerContainerX").mouseenter(function(){pulse(this);});
-    $("#phoneText").mouseenter(function(){pulse($(this).parent());});
-    $(".zoom").mouseenter(function(){pulse($(this).parent());});
-    $(".zoom").mouseenter(function(){pulse($(this).parent());});
-    $(".logo").mouseenter(function(){rotate(this,360);});
-    $(".logo").mouseleave(function(){rotate(this,-360);});
-    $(".socialLogo").mouseenter(function(){pulse($(this).parent());});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
 

@@ -1,0 +1,62 @@
+<a myHighlight href="/index.html" id="logo0" [@toBlur]="menuState" class="logo blurred">
+    <windmillBlue></windmillBlue>
+</a>
+<a href="/index.html" id="logo1" [@toBlur]="menuState" class="logo blurred">
+    <windmillRed></windmillRed>
+</a>
+<a href="/index.html" id="logo2" [@toBlur]="menuState" class="logo blurred">
+    <windmillWhite></windmillWhite>
+</a>
+<div id="contactText" class="headerText0 headerSpec font-Roboto-L"> <span [@toBlur]="menuState" class="blurred">contact me</span> </div>
+<div id="phoneWrap" [@toBlur]="menuState" class="headerSpec blurred"> <a id="phoneText" class="phoneTextCol0 font-Roboto-B" href="tel:00447415882971">0741 588 2971</a> </div>
+<div class="menuText headerText0 font-Roboto-L headerSpec"> <span [@toBlur]="menuState" class="blurred">menu</span> </div>
+<div id="hamburgerContainer" [@toBlur]="menuState" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec blurred">
+    <div id="hamburger" (click)="toggleMenu()">
+        <div class="menuLine menuLineCol0"></div>
+        <div class="menuLine menuLineCol0"></div>
+        <div class="menuLine menuLineCol0"></div>
+    </div>
+</div>
+<div id="sideNav" [@toBlur]="menuState" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter flexContainerColumnSpaceBetween blurred">
+    <a>
+        <div id="sideNavButton0" class="sideNavButton sideNavButtonChecked0"> </div>
+    </a>
+    <a>
+        <div id="sideNavButton1" (click)="changeProject()" class="sideNavButton"> </div>
+    </a>
+    <a>
+        <div id="sideNavButton2" class="sideNavButton"> </div>
+    </a>
+</div>
+<div id="rightMenu" [@rightMenu]="menuState" class="" [style.width.px]="menuWidth">
+    <div class="closeText font-Roboto-L headerSpec"> close </div>
+    <div id="hamburgerContainerX" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec">
+        <div id="hamburgerX" (click)="toggleMenu()"> </div>
+    </div>
+    <!-- Global Navigation -->
+    <nav id="linkNav">
+        <ul id="linksList" class="font-Roboto-L">
+            <li><a href="index.html" class="zoom">HOME</a></li>
+            <li><a href="/Works/works.html" class="zoom">WORKS</a></li>
+            <li><a href="/About/about.html" class="zoom">ABOUT</a></li>
+            <li><a href="/Contacts/contacts.php" class="zoom">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id="socialContainer" class="flexContainer flexContainerRow flexContainerRowHAlignSpaceAround flexContainerRowVAlignCenter">
+        <div class="socialWrap">
+            <a href="https://github.com/Giorgio-IMAGINARIA/" target="_blank" id="gitHub" class="socialLogo">
+                <gitHubLogo></gitHubLogo>
+            </a>
+        </div>
+        <div class="socialWrap">
+            <a href="http://uk.linkedin.com/pub/giorgio-mazzei/35/b01/a26" target="_blank" id="linkedIn" class="socialLogo">
+              <linkedInLogo></linkedInLogo>
+            </a>
+        </div>
+        <div class="socialWrap">
+            <a href="https://twitter.com/giorgiomazzei79" target="_blank" id="twitter" class="socialLogo">
+                <faceBookLogo></faceBookLogo>
+            </a>
+        </div>
+    </div>
+</div>
