@@ -1,9 +1,4 @@
- <nav>
-    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-  </nav>
-  <a myHighlight href="/index.html" id="logo0" [@toBlur]="menuState" class="logo blurred">
+<a myHighlight href="/index.html" id="logo0" [@toBlur]="menuState" class="logo blurred">
     <windmillBlue></windmillBlue>
 </a>
 <a href="/index.html" id="logo1" [@toBlur]="menuState" class="logo blurred">
@@ -41,9 +36,9 @@
     <!-- Global Navigation -->
     <nav id="linkNav">
         <ul id="linksList" class="font-Roboto-L">
-            <li><a href="index.html" class="zoom">HOME</a></li>
-            <li><a href="/Works/works.html" class="zoom">WORKS</a></li>
-            <li><a href="/About/about.html" class="zoom">ABOUT</a></li>
+            <li><a routerLink="/home" routerLinkActive="active" class="zoom">HOME</a></li>
+            <li><a routerLink="/dashboard" routerLinkActive="active" class="zoom">WORKS</a></li>
+            <li><a routerLink="/heroes" routerLinkActive="active" class="zoom">ABOUT</a></li>
             <li><a href="/Contacts/contacts.php" class="zoom">CONTACT</a></li>
         </ul>
     </nav>

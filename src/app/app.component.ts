@@ -1,4 +1,4 @@
-import { Component, trigger,  state, style, transition, animate } from '@angular/core';
+import { Component, trigger,  state, style, transition, animate, OnInit } from '@angular/core';
 import {WindmillBlueComponent} from './windmillBlue.component.ts';
 import {WindmillRedComponent} from './windmillRed.component.ts';
 import {WindmillWhiteComponent} from './windmillWhite.component.ts';
@@ -48,5 +48,16 @@ import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
             transition('active => inactive', animate('500ms ease-out'))
         ])]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+    private menuState: string;
+    ngOnInit() {
+        this.menuState = 'inactive';
+    }
+    toggleMenu() {
+        if (this.menuState === 'active') {
+            this.menuState = 'inactive';
+        } else {
+            this.menuState = 'active';
+        }
+    }
 }
