@@ -1,17 +1,17 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 @Directive({
-  selector: '[myHighlight]'
+  selector: '[myBlur]'
 })
-export class HighlightDirective {
+export class BlurDirective {
   private el: HTMLElement;
   constructor(el: ElementRef) { this.el = el.nativeElement; }
   @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('yellow');
+    this.toggleBlur();
   }
   @HostListener('mouseleave') onMouseLeave() {
-    this.highlight(null);
+    this.toggleBlur();
   }
-  private highlight(color: string) {
-    this.el.style.backgroundColor = color;
+  private toggleBlur() {
+    // this.el.style.backgroundColor = color;
   }
 }

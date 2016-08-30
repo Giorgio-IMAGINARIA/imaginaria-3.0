@@ -17,17 +17,6 @@
         <div class="menuLine menuLineCol0"></div>
     </div>
 </div>
-<div id="sideNav" [@toBlur]="menuState" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter flexContainerColumnSpaceBetween blurred">
-    <a>
-        <div id="sideNavButton0" class="sideNavButton sideNavButtonChecked0"> </div>
-    </a>
-    <a>
-        <div id="sideNavButton1" (click)="changeProject()" class="sideNavButton"> </div>
-    </a>
-    <a>
-        <div id="sideNavButton2" class="sideNavButton"> </div>
-    </a>
-</div>
 <div id="rightMenu" [@rightMenu]="menuState" class="" [style.width.px]="menuWidth">
     <div class="closeText font-Roboto-L headerSpec"> close </div>
     <div id="hamburgerContainerX" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec">
@@ -50,7 +39,7 @@
         </div>
         <div class="socialWrap">
             <a href="http://uk.linkedin.com/pub/giorgio-mazzei/35/b01/a26" target="_blank" id="linkedIn" class="socialLogo">
-              <linkedInLogo></linkedInLogo>
+                <linkedInLogo></linkedInLogo>
             </a>
         </div>
         <div class="socialWrap">
@@ -60,4 +49,5 @@
         </div>
     </div>
 </div>
-  <router-outlet></router-outlet>
+<div id="mask" [@mask]="menuState" (click)="toggleMenu()"> </div>
+<router-outlet></router-outlet>

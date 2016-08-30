@@ -1,3 +1,14 @@
+<div id="sideNav" [@toBlur]="menuState" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter flexContainerColumnSpaceBetween blurred">
+    <a>
+        <div id="sideNavButton0" class="sideNavButton sideNavButtonChecked0"> </div>
+    </a>
+    <a>
+        <div id="sideNavButton1" (click)="changeProject()" class="sideNavButton"> </div>
+    </a>
+    <a>
+        <div id="sideNavButton2" class="sideNavButton"> </div>
+    </a>
+</div>
 <div id="contentsReserve">
     <div class="section" id="section0">
         <div id="homeStrip" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter">
@@ -46,4 +57,4 @@
     </div>
 </div>
 <main [@toBlur]="menuState" class="blurred"><projectToRender></projectToRender></main>
-<div id="mask" [@mask]="menuState" (click)="toggleMenu()"> </div>
+
