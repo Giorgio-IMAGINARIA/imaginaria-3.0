@@ -65,10 +65,4 @@ export class HomeComponent implements OnInit, AfterViewInit {
             this.menuState = 'active';
         }
     }
-    changeProject() {
-        // console.log('CHANGE PROJECT!!!');
-        // console.log('this.localProjectToRenderComponent.nativeElement',this.localProjectToRenderComponent.nativeElement)
-        // console.log(this.localProjectToRenderComponent);
-        // this.renderer
-    }
 }
