@@ -12,7 +12,6 @@ import { BlurService } from './blur.service';
     selector: 'my-app',
     templateUrl: 'app.component.html',
     styleUrls: ['./app.component.css'],
-    directives: [WindmillBlueComponent, WindmillRedComponent, WindmillWhiteComponent, MbiLogoComponent, GitHubLogoComponent, LinkedInLogoComponent, FaceBookLogoComponent],
     providers: [BlurService],
     animations: [
         trigger('mask', [

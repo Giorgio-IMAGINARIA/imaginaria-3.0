@@ -7,7 +7,6 @@ import {ProjectToRenderComponent} from './projectToRender.component.ts';
     selector: 'my-home',
     templateUrl: 'home.component.html',
     styles: [require('../../public/css/Home/general.css').toString()],
-    directives: [ProjectToRenderComponent],
     animations: [
         trigger('mask', [
             state('inactive', style({
