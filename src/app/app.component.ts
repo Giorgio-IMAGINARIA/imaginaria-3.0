@@ -1,4 +1,4 @@
-import { Component, trigger,  state, style, transition, animate, OnInit } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, OnInit } from '@angular/core';
 import {WindmillBlueComponent} from './windmillBlue.component.ts';
 import {WindmillRedComponent} from './windmillRed.component.ts';
 import {WindmillWhiteComponent} from './windmillWhite.component.ts';
@@ -6,12 +6,14 @@ import {MbiLogoComponent} from './mbiLogo.component.ts';
 import {GitHubLogoComponent} from './gitHubLogo.component.ts';
 import {LinkedInLogoComponent} from './linkedInLogo.component.ts';
 import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
+import { BlurService } from './blur.service';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: 'app.component.html',
-  styleUrls: ['./app.component.css'],
-  directives: [WindmillBlueComponent, WindmillRedComponent, WindmillWhiteComponent, MbiLogoComponent, GitHubLogoComponent, LinkedInLogoComponent, FaceBookLogoComponent],
+    selector: 'my-app',
+    templateUrl: 'app.component.html',
+    styleUrls: ['./app.component.css'],
+    directives: [WindmillBlueComponent, WindmillRedComponent, WindmillWhiteComponent, MbiLogoComponent, GitHubLogoComponent, LinkedInLogoComponent, FaceBookLogoComponent],
+    providers: [BlurService],
     animations: [
         trigger('mask', [
             state('inactive', style({
@@ -50,14 +52,21 @@ import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
 })
 export class AppComponent implements OnInit {
     private menuState: string;
+    constructor(private blurService: BlurService) { }
     ngOnInit() {
         this.menuState = 'inactive';
     }
     toggleMenu() {
+        console.log('TOGGLEMENU');
         if (this.menuState === 'active') {
+            this.setBlurState(false);
             this.menuState = 'inactive';
         } else {
+            this.setBlurState(true);
             this.menuState = 'active';
         }
+    }
+    setBlurState(nextBlurState: boolean): void {
+        this.blurService.setBlurState(nextBlurState);
     }
 }

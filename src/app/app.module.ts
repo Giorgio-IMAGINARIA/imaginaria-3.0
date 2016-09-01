@@ -15,6 +15,7 @@ import { HighlightDirective } from './highlight.directive';
 import { BlurDirective } from './blur.directive';
 
 import { HeroService }  from './hero.service';
+import { BlurService } from './blur.service';
 
 @NgModule({
   imports: [
@@ -33,7 +34,7 @@ import { HeroService }  from './hero.service';
     BlurDirective
   ],
   providers: [
-    HeroService
+    HeroService, BlurService
   ],
   bootstrap: [AppComponent]
 })

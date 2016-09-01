@@ -1,11 +1,11 @@
 <div id="sideNav"  class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter flexContainerColumnSpaceBetween blurred">
-    <a>
-        <div myBlur id="sideNavButton0" class="sideNavButton sideNavButtonChecked0"> </div>
+    <a [@toBlur]="blurStateString">
+        <div  id="sideNavButton0" class="sideNavButton sideNavButtonChecked0"> </div>
     </a>
-    <a>
+    <a [@toBlur]="blurStateString">
         <div id="sideNavButton1" (click)="changeProject()" class="sideNavButton"> </div>
     </a>
-    <a>
+    <a [@toBlur]="blurStateString">
         <div id="sideNavButton2" class="sideNavButton"> </div>
     </a>
 </div>
