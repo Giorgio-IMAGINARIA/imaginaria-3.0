@@ -26,15 +26,6 @@ export class Dots implements OnInit {
   private blurStateString: string = 'inactive';
   constructor(private blurService: BlurService) { }
 
-  // getinitialBlurState(): void {
-  //   this.initialBlurState = this.blurService.getinitialBlurState();
-  //   if (this.initialBlurState) {
-  //     this.blurStateString = 'active'
-  //   } else {
-  //     this.blurStateString = 'inactive'
-  //   }
-  // }
-
   changeProject() {
     // console.log('CHANGE PROJECT!!!');
     // console.log('this.localProjectToRenderComponent.nativeElement',this.localProjectToRenderComponent.nativeElement)
@@ -43,15 +34,8 @@ export class Dots implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.getinitialBlurState();
     this.blurService.activeBlurStateObservable.subscribe(
-      response => {
-        if (response) {
-          this.blurStateString = 'active'
-        } else {
-          this.blurStateString = 'inactive'
-        }
-      },
+      response => response? this.blurStateString = 'active' : this.blurStateString = 'inactive',
       error => console.log('Error! Description: ' + error)
     );
   }

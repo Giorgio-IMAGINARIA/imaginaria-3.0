@@ -50,10 +50,19 @@ import { BlurService } from './blur.service';
         ])]
 })
 export class AppComponent implements OnInit {
+    private initialBlurState: boolean;
+    private blurStateString: string = 'inactive';
+
     private menuState: string;
+
     constructor(private blurService: BlurService) { }
-    ngOnInit() {
+    ngOnInit(): void {
         this.menuState = 'inactive';
+
+        this.blurService.activeBlurStateObservable.subscribe(
+            response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
+            error => console.log('Error! Description: ' + error)
+        );
     }
     toggleMenu() {
         console.log('TOGGLEMENU');

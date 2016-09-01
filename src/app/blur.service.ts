@@ -10,7 +10,4 @@ export class BlurService {
     setBlurState(nextState: boolean): void {
         this.activeBlurStateSubject.next(nextState);
     }
-    // getinitialBlurState(): boolean {
-    //     return this.initialBlurState;
-    // }
 }
