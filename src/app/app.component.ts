@@ -65,7 +65,6 @@ export class AppComponent implements OnInit {
         );
     }
     toggleMenu() {
-        console.log('TOGGLEMENU');
         if (this.menuState === 'active') {
             this.setBlurState(false);
             this.menuState = 'inactive';
