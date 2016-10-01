@@ -4,6 +4,7 @@ import { BlurService } from '../services/blur.service';
 @Component({
   selector: 'dots',
   templateUrl: '../templates/dots.component.html',
+  styles: [require('../styles/dots.component.css').toString()],
   animations: [
     trigger('toBlur', [
       state('inactive', style({

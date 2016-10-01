@@ -1,0 +1,30 @@
+#sideNav {
+    position: fixed;
+    z-index: 1000;
+}
+
+.sideNavButton {
+    cursor: pointer;
+    background-color: #999999;
+    -webkit-transition: background-color 0.8s linear;
+    -moz-transition: background-color 0.8s linear;
+    -o-transition: background-color 0.8s linear;
+    -ms-transition: background-color 0.8s linear;
+    transition: background-color 0.8s linear;
+}
+
+a:hover .sideNavButton {
+    background-color: #5E5E5E;
+}
+
+.sideNavButtonChecked0 {
+    background-color: #009393;
+}
+
+.sideNavButtonChecked1 {
+    background-color: #CB0000;
+}
+
+.sideNavButtonChecked2 {
+    background-color: #333333;
+}

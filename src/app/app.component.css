@@ -1,28 +1,227 @@
 h1 {
-  font-size: 1.2em;
-  color: #999;
-  margin-bottom: 0;
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 0;
 }
+
 h2 {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
 }
+
 nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
 }
-nav a:visited, a:link {
-  color: #607D8B;
+
+nav a:visited,
+a:link {
+    color: #607D8B;
 }
+
 nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
+    color: #039be5;
+    background-color: #CFD8DC;
 }
+
 nav a.active {
-  color: #039be5;
+    color: #039be5;
+}
+
+#logo0 {
+    display: inline;
+    opacity: 1.0;
+    filter: alpha(opacity=1);
+}
+
+#logo1 {
+    display: none;
+    opacity: 0.0;
+    filter: alpha(opacity=0);
+}
+
+#logo2 {
+    display: none;
+    opacity: 0.0;
+    filter: alpha(opacity=0);
+}
+
+.logo {
+    position: fixed;
+    z-index: 1000;
+}
+
+#contactText {
+    text-align: left;
+    position: fixed;
+    z-index: 1000;
+    text-transform: uppercase;
+    -webkit-transition: color 0.8s linear;
+    -moz-transition: color 0.8s linear;
+    -o-transition: color 0.8s linear;
+    -ms-transition: color 0.8s linear;
+    transition: color 0.8s linear;
+}
+
+.headerText0 {
+    color: #000000;
+}
+
+.headerText1 {
+    color: #000000;
+}
+
+.headerText2 {
+    color: #FFFFFF;
+}
+
+#phoneWrap {
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+}
+
+#phoneText {
+    -webkit-transition: color 0.8s linear;
+    -moz-transition: color 0.8s linear;
+    -o-transition: color 0.8s linear;
+    -ms-transition: color 0.8s linear;
+    transition: color 0.8s linear;
+}
+
+.phoneTextCol0 {
+    color: #009999;
+}
+
+.phoneTextCol1 {
+    color: #CC0000;
+}
+
+.phoneTextCol2 {
+    color: #FFFFFF;
+}
+
+.menuText {
+    position: fixed;
+    z-index: 1000;
+    width: 100px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-transition: color 0.8s linear;
+    -moz-transition: color 0.8s linear;
+    -o-transition: color 0.8s linear;
+    -ms-transition: color 0.8s linear;
+    transition: color 0.8s linear;
+}
+
+#hamburgerContainer {
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+}
+
+#hamburger {
+    cursor: pointer;
+}
+
+.menuLine {
+    width: 100%;
+    -webkit-transition: background-color 0.8s linear;
+    -moz-transition: background-color 0.8s linear;
+    -o-transition: background-color 0.8s linear;
+    -ms-transition: background-color 0.8s linear;
+    transition: background-color 0.8s linear;
+}
+
+.menuLineCol0 {
+    background-color: #009999;
+}
+
+.menuLineCol1 {
+    background-color: #CA0000;
+}
+
+.menuLineCol2 {
+    background-color: #FFFFFF;
+}
+
+#rightMenu {
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    background-color: #ffffff;
+    height: 100%;
+    box-shadow: -10px 0px 40px -20px #595959;
+    border-left: solid 1px #959595;
+}
+
+.closeText {
+    position: absolute;
+    z-index: 1000;
+    color: #000000;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#hamburgerContainerX {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+}
+
+#hamburgerX {
+    cursor: pointer;
+    position: relative;
+}
+
+#hamburgerX:before,
+#hamburgerX:after {
+    content: '';
+    position: absolute;
+    background-color: #000000;
+}
+
+#hamburgerX:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hamburgerX:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#linksList {
+    position: absolute;
+    width: 100%;
+}
+
+ul#linksList li {
+    text-align: center;
+}
+
+#socialContainer {
+    position: absolute;
+    bottom: 0;
+}
+
+.socialLogo {
+    position: absolute;
+}
+
+#mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    cursor: pointer;
 }
