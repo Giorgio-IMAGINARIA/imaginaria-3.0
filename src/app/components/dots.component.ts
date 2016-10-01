@@ -1,10 +1,9 @@
 import { Component, OnInit, trigger, state, style, transition, animate} from '@angular/core';
-import { BlurService } from './blur.service';
+import { BlurService } from '../services/blur.service';
 
 @Component({
   selector: 'dots',
-  templateUrl: './dots.component.html',
-  styles: [require('../../public/css/Home/dots.css').toString()],
+  templateUrl: '../templates/dots.component.html',
   animations: [
     trigger('toBlur', [
       state('inactive', style({

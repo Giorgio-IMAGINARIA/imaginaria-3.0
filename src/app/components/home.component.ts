@@ -1,12 +1,12 @@
 import { Renderer, ViewChild, ViewChildren, AfterViewInit, Component, OnInit, ElementRef, trigger, state, style, transition, animate } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {ProjectToRenderComponent} from './projectToRender.component.ts';
+import {ProjectToRenderComponent} from './projectToRender.component';
 
 @Component({
     selector: 'my-home',
-    templateUrl: 'home.component.html',
-    styles: [require('../../public/css/Home/general.css').toString()],
+    templateUrl: '../templates/home.component.html',
+    styles: [require('../styles/home.component.css').toString()],
     animations: [
         trigger('mask', [
             state('inactive', style({

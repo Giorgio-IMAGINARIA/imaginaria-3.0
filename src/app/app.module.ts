@@ -5,25 +5,25 @@ import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { routing }        from './app.routing';
 
-import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent }  from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HomeComponent } from './home.component';
-import { Dots } from './dots.component';
-import {WindmillBlueComponent} from './windmillBlue.component.ts';
-import {WindmillRedComponent} from './windmillRed.component.ts';
-import {WindmillWhiteComponent} from './windmillWhite.component.ts';
-import {MbiLogoComponent} from './mbiLogo.component.ts';
-import {GitHubLogoComponent} from './gitHubLogo.component.ts';
-import {LinkedInLogoComponent} from './linkedInLogo.component.ts';
-import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
-import {ProjectToRenderComponent} from './projectToRender.component.ts';
+import { DashboardComponent } from './components/dashboard.component';
+import { HeroesComponent }  from './components/heroes.component';
+import { HeroDetailComponent } from './components/hero-detail.component';
+import { HomeComponent } from './components/home.component';
+import { Dots } from './components/dots.component';
+import {WindmillBlueComponent} from './components/windmillBlue.component';
+import {WindmillRedComponent} from './components/windmillRed.component';
+import {WindmillWhiteComponent} from './components/windmillWhite.component';
+import {MbiLogoComponent} from './components/mbiLogo.component';
+import {GitHubLogoComponent} from './components/gitHubLogo.component';
+import {LinkedInLogoComponent} from './components/linkedInLogo.component';
+import {FaceBookLogoComponent} from './components/faceBookLogo.component';
+import {ProjectToRenderComponent} from './components/projectToRender.component';
 
-import { HighlightDirective } from './highlight.directive';
-import { BlurDirective } from './blur.directive';
+import { HighlightDirective } from './directives/highlight.directive';
+import { BlurDirective } from './directives/blur.directive';
 
-import { HeroService }  from './hero.service';
-import { BlurService } from './blur.service';
+import { HeroService }  from './services/hero.service';
+import { BlurService } from './services/blur.service';
 
 @NgModule({
   imports: [

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import { Hero } from '../models/hero';
+import { HeroService } from '../services/hero.service';
 
 @Component({
   selector: 'my-hero-detail',
-  templateUrl: './hero-detail.component.html',
+  templateUrl: '../templates/hero-detail.component.html'
 })
 export class HeroDetailComponent implements OnInit {
   hero: Hero;

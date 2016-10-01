@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import { Hero } from '../models/hero';
+import { HeroService } from '../services/hero.service';
 
 @Component({
     selector: 'my-dashboard',
-    templateUrl: './dashboard.component.html',
-    styles: [require('./dashboard.component.css').toString()]
+    templateUrl: '../templates/dashboard.component.html',
+    styles: [require('../styles/dashboard.component.css').toString()]
 
 })
 

@@ -1,16 +1,16 @@
 import { Component, trigger, state, style, transition, animate, OnInit } from '@angular/core';
-import {WindmillBlueComponent} from './windmillBlue.component.ts';
-import {WindmillRedComponent} from './windmillRed.component.ts';
-import {WindmillWhiteComponent} from './windmillWhite.component.ts';
-import {MbiLogoComponent} from './mbiLogo.component.ts';
-import {GitHubLogoComponent} from './gitHubLogo.component.ts';
-import {LinkedInLogoComponent} from './linkedInLogo.component.ts';
-import {FaceBookLogoComponent} from './faceBookLogo.component.ts';
-import { BlurService } from './blur.service';
+import {WindmillBlueComponent} from './components/windmillBlue.component';
+import {WindmillRedComponent} from './components/windmillRed.component';
+import {WindmillWhiteComponent} from './components/windmillWhite.component';
+import {MbiLogoComponent} from './components/mbiLogo.component';
+import {GitHubLogoComponent} from './components/gitHubLogo.component';
+import {LinkedInLogoComponent} from './components/linkedInLogo.component';
+import {FaceBookLogoComponent} from './components/faceBookLogo.component';
+import { BlurService } from './services/blur.service';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app.component.html',
+    templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
     providers: [BlurService],
     animations: [
