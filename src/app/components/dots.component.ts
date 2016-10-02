@@ -1,5 +1,6 @@
 import { Component, OnInit, trigger, state, style, transition, animate} from '@angular/core';
 import { BlurService } from '../services/blur.service';
+import { HandleProjectsService } from '../services/handleProjects.service';
 
 @Component({
   selector: 'dots',
@@ -24,7 +25,7 @@ export class Dots implements OnInit {
 
   private initialBlurState: boolean;
   private blurStateString: string = 'inactive';
-  constructor(private blurService: BlurService) { }
+  constructor(private blurService: BlurService, private handleProjectsService: HandleProjectsService) { }
 
   changeProject(project:number) {
     console.log('project selected: ', project);
