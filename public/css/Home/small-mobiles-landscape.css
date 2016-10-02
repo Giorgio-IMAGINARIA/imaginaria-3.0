@@ -2,48 +2,51 @@
 **********************************************************************************
 **********************************************************************************/
 
+
 /* ----------- Desktops Media Queries----------- */
 
-.headerSpec{
-    height:80px;
-    line-height:80px;
+.headerSpec {
+    height: 80px;
+    line-height: 80px;
     font-size: 12pt;
     letter-spacing: 2pt;
 }
-.logo{
+
+.logo {
     width: 80px;
-    height:80px;
+    height: 80px;
     /*margin-left:10px;*/
     background-size: 80px 80px;
     /*background-color: red;*/
 }
-#contactText{
-    display:none;
+
+#contactText {
+    display: none;
     font-size: 12pt;
     letter-spacing: 2pt;
     line-height: 54px;
-    height:54px;
-    width:165px;
+    height: 54px;
+    width: 165px;
     /*background-color: #1c3e95;*/
-    right:calc(0% + 250px);
+    right: calc(0% + 250px);
 }
 
-#phoneWrap{
-    display:none;
-    width:150px;
+#phoneWrap {
+    display: none;
+    width: 150px;
     /*background-color: yellow;*/
-    right:calc(0% + 100px);
+    right: calc(0% + 100px);
 }
 
-.menuText{
-    display:none;
-    width:100px;
+.menuText {
+    display: none;
+    width: 100px;
     background-color: #1c3e95;
-    right:calc(0% + 100px);
+    right: calc(0% + 100px);
 }
 
-#hamburgerContainer{
-    width:80px;
+#hamburgerContainer {
+    width: 80px;
     /*background-color: #7f7f7f;*/
 }
 
@@ -51,249 +54,271 @@
 /*
 the hamburger button
 */
+
 #hamburger {
     height: 29px;
     width: 50px;
     /*background-color: red;*/
 }
 
+
 /*
 The stripes in the hamburger button
 */
-.menuLine{
+
+.menuLine {
     height: 3px;
 }
 
 #hamburger div:nth-child(2) {
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#sideNav{
-    display:none;
-    top:calc(50% - 49px);
+#sideNav {
+    display: none;
+    top: calc(50% - 49px);
     /*background-color: #1c3e95;*/
-    width:14px;
+    width: 14px;
     height: 98px;
-    left:43px;
+    left: 43px;
 }
 
-.sideNavButton{
+.sideNavButton {
     border: 1px solid #FFFFFF;
     width: 10px;
     height: 10px;
     box-shadow: 0 0 0 1px #1D1D1B;
 }
 
-
-#homeStrip{
-    top:55px;
+#homeStrip {
+    top: 55px;
     /*height:121px;*/
     /*background-color: lightcoral;*/
 }
 
-
-#homeTitle{
+#homeTitle {
     font-size: 18pt;
     letter-spacing: 4pt;
-    height:50px;
-    line-height:50px;
+    height: 50px;
+    line-height: 50px;
     /*background-color: yellowgreen;*/
 }
 
-#homeLine{
-    height:2px;
-    width:140px;
+#homeLine {
+    height: 2px;
+    width: 140px;
 }
-#homeComment{
-    width:310px;
+
+#homeComment {
+    width: 310px;
     font-size: 6pt;
     letter-spacing: 0.1pt;
     line-height: 8pt;
-    height:50px;
+    height: 50px;
     /*background-color: bisque;*/
 }
-#ruiStrip{
-    height:130px;
-}
-#ruiTitle{
-    font-size: 8pt;
-    letter-spacing: 0.4pt;
-    height:12px;
-    line-height:12px;
-    /*background-color: yellowgreen;*/
-}
-#ruiLine{
-    height:1px;
-    width:200px;
+
+#ruiStrip {
+    height: 130px;
 }
 
-#ruiComment1{
+#ruiTitle {
+    font-size: 8pt;
+    letter-spacing: 0.4pt;
+    height: 12px;
+    line-height: 12px;
+    /*background-color: yellowgreen;*/
+}
+
+#ruiLine {
+    height: 1px;
+    width: 200px;
+}
+
+#ruiComment1 {
     font-size: 35px;
     letter-spacing: 2pt;
-    height:35px;
-    line-height:35px;
+    height: 35px;
+    line-height: 35px;
     /*background-color: darkslategray;*/
 }
-#ruiComment2{
+
+#ruiComment2 {
     font-size: 10pt;
     letter-spacing: 0.2pt;
-    height:16px;
-    line-height:16px;
+    height: 16px;
+    line-height: 16px;
     /*background-color: fuchsia;*/
 }
-.ruiSpace{
-    height:8px;
+
+.ruiSpace {
+    height: 8px;
     /*background-color: red;*/
 }
-#mbiStrip{
-    width:280px;
-    height:120px;
+
+#mbiStrip {
+    width: 280px;
+    height: 120px;
 }
-#mbiTitle{
+
+#mbiTitle {
     font-size: 11px;
-    height:12px;
-    line-height:12px;
-   /* background-color: yellowgreen;*/
+    height: 12px;
+    line-height: 12px;
+    /* background-color: yellowgreen;*/
 }
-#mbiLine{
-    height:1px;
-    width:240px;
+
+#mbiLine {
+    height: 1px;
+    width: 240px;
 }
-#mbiContainer{
-    height:60px;
+
+#mbiContainer {
+    height: 60px;
     /*background-color: red;*/
 }
-#mbiLogo{
-    width:60px;
-    height:60px;
+
+#mbiLogo {
+    width: 60px;
+    height: 60px;
 }
-#mbiInternal{
-    width:170px;
-    height:60px;
-   /* background-color: #009999;*/
+
+#mbiInternal {
+    width: 170px;
+    height: 60px;
+    /* background-color: #009999;*/
     margin-left: 10px;
 }
 
-#mbiComment1{
+#mbiComment1 {
     font-size: 18pt;
     letter-spacing: 0.2pt;
-    height:25pt;
-    line-height:25pt;
-   /* background-color: darkslategray;*/
-}
-#mbiComment2{
-    font-size: 11pt;
-    letter-spacing: 0.5pt;
-    height:16pt;
-    line-height:16pt;
-   /* background-color: fuchsia;*/
-}
-.mbiSpace{
-    height:10px;
-   /* background-color: darkolivegreen;*/
+    height: 25pt;
+    line-height: 25pt;
+    /* background-color: darkslategray;*/
 }
 
-#section0{
-    background-image: url(../../Pics/MPicsL/background1.jpg);
+#mbiComment2 {
+    font-size: 11pt;
+    letter-spacing: 0.5pt;
+    height: 16pt;
+    line-height: 16pt;
+    /* background-color: fuchsia;*/
 }
-#section1{
-    background-image: url(../../Pics/MPicsL/background2.jpg);
+
+.mbiSpace {
+    height: 10px;
+    /* background-color: darkolivegreen;*/
 }
-#section2{
-    background-image: url(../../Pics/MPicsL/background3.jpg);
+
+#section0 {
+    background-image: url(../../images/MPicsL/background1.jpg);
 }
-#rightMenu{
-    right:-210px;
-    width:160px;
+
+#section1 {
+    background-image: url(../../images/MPicsL/background2.jpg);
 }
-.closeText{
-    display:none;
-    width:100px;
+
+#section2 {
+    background-image: url(../../images/MPicsL/background3.jpg);
+}
+
+#rightMenu {
+    right: -210px;
+    width: 160px;
+}
+
+.closeText {
+    display: none;
+    width: 100px;
     background-color: #1c3e95;
-    right:calc(0% + 50px);
+    right: calc(0% + 50px);
     font-size: 10px;
 }
-#hamburgerContainerX{
-    width:80px;
+
+#hamburgerContainerX {
+    width: 80px;
     /*background-color: #7f7f7f;*/
     /*right:calc(50% - 40px);*/
 }
 
-#hamburgerX{
+#hamburgerX {
     height: 22px;
     width: 38px;
     /*background-color:red;*/
 }
 
-#hamburgerX:before,#hamburgerX:after{
-    width:30px;
-    height:2px;
-    top:10px;
+#hamburgerX:before,
+#hamburgerX:after {
+    width: 30px;
+    height: 2px;
+    top: 10px;
 }
 
-#hamburgerX:before{
-    left:4px;
-}
-#hamburgerX:after{
-    right:4px;
+#hamburgerX:before {
+    left: 4px;
 }
 
-#linksList{
-    bottom:calc(50% - 68px);
+#hamburgerX:after {
+    right: 4px;
+}
+
+#linksList {
+    bottom: calc(50% - 68px);
     font-size: 13pt;
     letter-spacing: 1pt;
     /*background-color: #1c3e95;*/
 }
-ul#linksList li{
+
+ul#linksList li {
     /*background-color: brown;*/
-    height:34px;
-    line-height:34px;
+    height: 34px;
+    line-height: 34px;
 }
-#socialContainer{
-    width:100%;
-    height:80px;
+
+#socialContainer {
+    width: 100%;
+    height: 80px;
     /*background-color: yellow;*/
 }
-.socialLogo{
+
+.socialLogo {
     width: 30px;
-    height:30px;
+    height: 30px;
     background-size: 30px 30px;
 }
 
-.socialWrap{
+.socialWrap {
     width: 30px;
-    height:30px;
+    height: 30px;
     /*background-color: yellowgreen;*/
 }
+
 
 /*********************************************************************************
 *****************************(max-height: 622px)**********************************
 **********************************************************************************/
+
 @media screen and (max-height: 200px) {
-
-    #homeLine{
-        display:none;
+    #homeLine {
+        display: none;
     }
-
-    #homeComment{
-        display:none;
+    #homeComment {
+        display: none;
     }
-
 }
 
 
 /*********************************************************************************
 ********************************(max-height: 494px)*******************************
 **********************************************************************************/
+
 @media screen and (max-height: 100px) {
-
-    #linksList{
-        display:none;
+    #linksList {
+        display: none;
     }
-
-    #socialContainer{
-        display:none;
+    #socialContainer {
+        display: none;
     }
-
 }

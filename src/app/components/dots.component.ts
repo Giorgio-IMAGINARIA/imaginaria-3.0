@@ -26,8 +26,8 @@ export class Dots implements OnInit {
   private blurStateString: string = 'inactive';
   constructor(private blurService: BlurService) { }
 
-  changeProject() {
-    // console.log('CHANGE PROJECT!!!');
+  changeProject(project:number) {
+    console.log('project selected: ', project);
     // console.log('this.localProjectToRenderComponent.nativeElement',this.localProjectToRenderComponent.nativeElement)
     // console.log(this.localProjectToRenderComponent);
     // this.renderer
