@@ -29,6 +29,7 @@ export class Dots implements OnInit {
 
   changeProject(project:number) {
     console.log('project selected: ', project);
+    this.handleProjectsService.setProjectsState(project);
     // console.log('this.localProjectToRenderComponent.nativeElement',this.localProjectToRenderComponent.nativeElement)
     // console.log(this.localProjectToRenderComponent);
     // this.renderer

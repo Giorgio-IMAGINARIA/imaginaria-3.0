@@ -4,10 +4,10 @@ import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class HandleProjectsService {
-    public projectsStateSubject: Subject<boolean> = new Subject<boolean>();
-    public projectsStateObservable: Observable<boolean> = this.projectsStateSubject.asObservable();
-    setProjectsState(nextState: boolean): void {
-        console.log('from handleProjectsService', nextState);
-        this.projectsStateSubject.next(nextState);
+    public projectsStateSubject: Subject<number> = new Subject<number>();
+    public projectsStateObservable: Observable<number> = this.projectsStateSubject.asObservable();
+    setProjectsState(projectState: number): void {
+        console.log('from handleProjectsService: ', projectState);
+        this.projectsStateSubject.next(projectState);
     }
 }
