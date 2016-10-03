@@ -1,10 +1,9 @@
 // Angular Components
-import { Renderer, ViewChild, ViewChildren, AfterViewInit, Component, OnInit, ElementRef, trigger, state, style, transition, animate } from '@angular/core';
+import { Renderer, ViewChild, ViewChildren, AfterViewInit, Component, OnInit, ElementRef, trigger, state, style, transition, animate, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-// App Components
-import { ProjectToRenderComponent } from './projectToRender.component';
 // Services
 import { HandleProjectsService } from '../services/handleProjects.service';
+import { BlurService } from '../services/blur.service';
 
 declare let $: any;
 
@@ -49,7 +48,6 @@ declare let $: any;
         ])]
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-    // @ViewChild(ProjectToRenderComponent) private localProjectToRenderComponent: ProjectToRenderComponent;
     private slideTwice: boolean;
     private mov: boolean;
     private trans: number;
@@ -59,10 +57,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
     private blurred: boolean;
     private menuState: string;
     private projectsState: number;
-    constructor(private router: Router, private renderer: Renderer, private handleProjectsService: HandleProjectsService) {
+    constructor(private router: Router, private renderer: Renderer, private handleProjectsService: HandleProjectsService, private blurService: BlurService) {
         this.trans = 800;
         this.eas = 'cubic-bezier(1,0,0,1)';
     }
+
     ngOnInit() {
         this.blurred = false;
         this.slideTwice = false;
@@ -70,9 +69,39 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.cont = 0;
         this.menuState = 'inactive';
         this.projectsState = this.handleProjectsService.currentProjectsState;
-        console.log('this.projectsState: ', this.projectsState);
         this.checkHandleProjectsService();
+        this.checkBlurService();
     }
+
+    @HostListener('window:keydown', ['$event']) keyboardInput(event: any) {
+        if ((event.which == 38) && (this.cont != 0) && !this.mov && !this.blurred) {
+            this.slideUp(this.cont);
+        }
+        // down
+        else if ((event.which == 40) && (this.cont != 2) && !this.mov && !this.blurred) {
+            this.slideDown(this.cont);
+        }
+        // exit this handler for other keys
+        else return;
+        event.preventDefault(); // prevent the default action (scroll / move caret)
+    }
+
+    @HostListener('window:mousewheel', ['$event']) muoseWheel(event: any) {
+        if ((event.deltaY < 0) && (this.cont != 0) && !this.mov && !this.blurred) {
+            this.slideUp(this.cont);
+        }
+        if ((event.deltaY > 0) && (this.cont != 2) && !this.mov && !this.blurred) {
+            this.slideDown(this.cont);
+        }
+    }
+
+    private checkBlurService(): void {
+        this.blurService.activeBlurStateObservable.subscribe(
+            response => response ? this.blurred = true : this.blurred = false,
+            error => console.log('Error! Description: ' + error)
+        );
+    }
+
     private checkHandleProjectsService(): void {
         this.handleProjectsService.projectsStateObservable.subscribe(
             response => {
@@ -117,8 +146,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
             error => console.log('Error! Description: ' + error)
         );
     }
-
-
 
     private slideDown(cs: number): void {
         if (!this.slideTwice) this.mov = true;
@@ -177,9 +204,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
         $("main #section" + ns).css("transition-timing-function", this.eas);
         setTimeout(this.afterSlideOnce.bind(this, cs, ns), this.trans);
     }
-
-
-
 
     private slideUp(cs: number): void {
         if (!this.slideTwice) this.mov = true;

@@ -17,7 +17,6 @@ import { MbiLogoComponent } from './components/mbiLogo.component';
 import { GitHubLogoComponent } from './components/gitHubLogo.component';
 import { LinkedInLogoComponent } from './components/linkedInLogo.component';
 import { FaceBookLogoComponent } from './components/faceBookLogo.component';
-import { ProjectToRenderComponent } from './components/projectToRender.component';
 
 import { HighlightDirective } from './directives/highlight.directive';
 import { BlurDirective } from './directives/blur.directive';
@@ -46,7 +45,6 @@ import { HandleProjectsService } from './services/handleProjects.service';
     HeroDetailComponent,
     HomeComponent,
     Dots,
-    ProjectToRenderComponent,
     HighlightDirective,
     BlurDirective
   ],

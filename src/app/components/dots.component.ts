@@ -1,4 +1,4 @@
-import { Component, OnInit, trigger, state, style, transition, animate} from '@angular/core';
+import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import { BlurService } from '../services/blur.service';
 import { HandleProjectsService } from '../services/handleProjects.service';
 
@@ -27,19 +27,20 @@ export class Dots implements OnInit {
   private blurStateString: string = 'inactive';
   constructor(private blurService: BlurService, private handleProjectsService: HandleProjectsService) { }
 
-  changeProject(project:number) {
-    console.log('project selected: ', project);
-    this.handleProjectsService.setProjectsState(project);
-    // console.log('this.localProjectToRenderComponent.nativeElement',this.localProjectToRenderComponent.nativeElement)
-    // console.log(this.localProjectToRenderComponent);
-    // this.renderer
+  ngOnInit(): void {
+    this.checkBlurService();
   }
 
-  ngOnInit(): void {
+  private checkBlurService(): void {
     this.blurService.activeBlurStateObservable.subscribe(
-      response => response? this.blurStateString = 'active' : this.blurStateString = 'inactive',
+      response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
       error => console.log('Error! Description: ' + error)
     );
+  }
+
+  changeProject(project: number) {
+    console.log('project selected: ', project);
+    this.handleProjectsService.setProjectsState(project);
   }
 
 }
