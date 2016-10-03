@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { HandleProjectsService } from '../services/handleProjects.service';
 import { BlurService } from '../services/blur.service';
 
+
 declare let $: any;
 
 @Component({
@@ -47,7 +48,7 @@ declare let $: any;
             transition('active => inactive', animate('500ms ease-out'))
         ])]
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
     private slideTwice: boolean;
     private mov: boolean;
     private trans: number;
@@ -71,6 +72,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.projectsState = this.handleProjectsService.currentProjectsState;
         this.checkHandleProjectsService();
         this.checkBlurService();
+        this.activateSwipeListener();
+        this.initialiseProjects();
     }
 
     @HostListener('window:keydown', ['$event']) keyboardInput(event: any) {
@@ -93,6 +96,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
         if ((event.deltaY > 0) && (this.cont != 2) && !this.mov && !this.blurred) {
             this.slideDown(this.cont);
         }
+    }
+
+    private initialiseProjects(): void {
+        $("#contentsReserve #section0").clone().appendTo("main");
+        $("#sideNavButton" + this.cont).addClass("sideNavButtonChecked" + this.cont);
+        $("#phoneText").addClass("phoneTextCol" + this.cont);
+        $(".menuLine").addClass("menuLineCol" + this.cont);
+        $("#contactText").addClass("headerText" + this.cont);
+        $(".menuText").addClass("headerText" + this.cont);
     }
 
     private checkBlurService(): void {
@@ -324,14 +336,23 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.slideTwice = false;
     }
 
-
-
-    ngAfterViewInit() {
-        // alert('ciao');
-        // console.log(this.localProjectToRenderComponent);
-        // console.log('this.localProjectToRenderComponent.nativeElement',this.localProjectToRenderComponent.nativeElement)
-        // this.renderer.invokeElementMethod(this.localProjectToRenderComponent.nativeElement,'focus')
+    private activateSwipeListener(): void {
+        $("main").swipe({
+            swipe: this.swipeFunction.bind(this),
+            threshold: 0,
+            fingers: "all"
+        });
     }
+
+    private swipeFunction(event: any, direction: string, distance: number, duration: number, fingerCount: number, fingerData: any): void {
+        if ((direction === "down") && (this.cont != 0) && !this.mov && !this.blurred) {
+            this.slideUp(this.cont);
+        } else if ((direction === "up") && (this.cont != 2) && !this.mov && !this.blurred) {
+            this.slideDown(this.cont);
+        } else return;
+    }
+
+
     toggleMenu() {
         if (this.menuState === 'active') {
             this.menuState = 'inactive';

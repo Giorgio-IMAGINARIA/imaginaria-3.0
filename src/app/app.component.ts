@@ -1,4 +1,4 @@
-import { Component, trigger, state, style, transition, animate, OnInit } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, OnInit,  HostListener } from '@angular/core';
 import {WindmillBlueComponent} from './components/windmillBlue.component';
 import {WindmillRedComponent} from './components/windmillRed.component';
 import {WindmillWhiteComponent} from './components/windmillWhite.component';
@@ -56,6 +56,18 @@ export class AppComponent implements OnInit {
     private menuState: string;
 
     constructor(private blurService: BlurService) { }
+
+  @HostListener('window:orientationchange', ['$event']) onorientationchange(event: any) {
+        location.reload();
+    }
+
+    @HostListener('window:load', ['$event']) onLoad(event: any) {
+        window.scrollTo(0, 0);
+    }
+    @HostListener('window:touchstart', ['$event']) ontouchstart(event: any) {
+        window.scrollTo(0, 0);
+    }
+
     ngOnInit(): void {
         this.menuState = 'inactive';
 
