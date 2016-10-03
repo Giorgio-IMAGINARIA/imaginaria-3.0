@@ -28,3 +28,127 @@ a:hover .sideNavButton {
 .sideNavButtonChecked2 {
     background-color: #333333;
 }
+
+@media screen and (min-width: 1280px) {
+    #sideNav {
+        top: calc(50% - 49px);
+        /*background-color: #1c3e95;*/
+        width: 14px;
+        height: 98px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
+    #sideNav {
+        top: calc(50% - 70px);
+        /*background-color: #1c3e95;*/
+        width: 19px;
+        height: 140px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 15px;
+        height: 15px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) {
+    #sideNav {
+        top: calc(50% - 49px);
+        /*background-color: #1c3e95;*/
+        width: 14px;
+        height: 98px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+}
+
+@media screen and (min-width: 736px) and (max-width:1023px) and (orientation:landscape) {
+    #sideNav {
+        display: none;
+        top: calc(50% - 49px);
+        /*background-color: #1c3e95;*/
+        width: 14px;
+        height: 98px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+    .sideNavButtonInternal {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) {
+    #sideNav {
+        display: none;
+        top: calc(50% - 49px);
+        /*background-color: #1c3e95;*/
+        width: 14px;
+        height: 98px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+    .sideNavButtonInternal {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:735px) and (orientation:landscape) {
+    #sideNav {
+        display: none;
+        top: calc(50% - 49px);
+        /*background-color: #1c3e95;*/
+        width: 14px;
+        height: 98px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+}
+
+@media screen and (max-width:413px) and (orientation:portrait) {
+    #sideNav {
+        display: none;
+        top: calc(50% - 49px);
+        /*background-color: #1c3e95;*/
+        width: 14px;
+        height: 98px;
+        left: 43px;
+    }
+    .sideNavButton {
+        border: 1px solid #FFFFFF;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #1D1D1B;
+    }
+}
