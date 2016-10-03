@@ -87,7 +87,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
                         }
 
                         if ((this.cont == 2) && !this.mov && !this.blurred) {
-                            this.slideUpTwice();
+                            this.slideDouble('up');
                         }
                         break;
                     case 1:
@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
                     case 2:
                         console.log('this.cont: ', this.cont);
                         if ((this.cont == 0) && !this.mov && !this.blurred) {
-                            this.slideDownTwice()
+                            this.slideDouble('down');
                         }
                         if ((this.cont == 1) && !this.mov && !this.blurred) {
                             console.log('second step');
@@ -113,7 +113,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
                     default:
                         throw ('toggleLeftPanel error');
                 }
-
             },
             error => console.log('Error! Description: ' + error)
         );
@@ -251,74 +250,55 @@ export class HomeComponent implements OnInit, AfterViewInit {
         $("#sideNavButton" + this.cont).addClass("sideNavButtonChecked");
         if (!this.slideTwice) this.mov = false;
     }
-    private firstSlideTwice(): any {
+
+    private slideDouble(direction: string) {
+        let chainDefSD: any = $.Deferred();
+        chainDefSD.then(this.firstSlideTwice.bind(this, direction))
+            .then(this.secondSlideTwice.bind(this, direction));
+        chainDefSD.resolve();
+    }
+
+    private firstSlideTwice(direction: string): any {
         this.slideTwice = true;
         this.mov = true;
         let def1s = new $.Deferred();
-        this.slideDown(this.cont);
+        switch (direction) {
+            case 'up':
+                this.slideUp(this.cont);
+                break;
+            case 'down':
+                this.slideDown(this.cont);
+                break;
+            default:
+                throw ('slideDirection error');
+        }
         setTimeout(function () {
             def1s.resolve();
         }, this.trans);
         return def1s.promise();
     }
-    private secondSlideTwice(): any {
+
+    private secondSlideTwice(direction: string): any {
         let def2s = new $.Deferred();
-        this.slideDown(this.cont);
+        switch (direction) {
+            case 'up':
+                this.slideUp(this.cont);
+                break;
+            case 'down':
+                this.slideDown(this.cont);
+                break;
+            default:
+                throw ('slideDirection error');
+        }
         setTimeout(this.secondSlideTwiceTimeOut.bind(this, def2s), this.trans);
         return def2s.promise();
     }
+
     private secondSlideTwiceTimeOut(def2s: any): void {
         def2s.resolve();
         this.mov = false;
         this.slideTwice = false;
     }
-
-    private slideDownTwice() {
-        let chainDefSD = $.Deferred();
-        chainDefSD.then(this.firstSlideTwice.bind(this))
-            .then(this.secondSlideTwice.bind(this));
-        chainDefSD.resolve();
-    }
-
-    private slideUpTwice() {
-        let chainDefSU = $.Deferred();
-        chainDefSU.then(function () {
-
-
-
-            this.slideTwice = true;
-            this.mov = true;
-            let def1s = new $.Deferred();
-            this.slideUp(this.cont);
-            setTimeout(function () {
-
-                def1s.resolve();
-
-            }, this.trans);
-            return def1s.promise();
-
-
-
-
-
-        })
-            .then(function () {
-                let def2s = new $.Deferred();
-                this.slideUp(this.cont);
-                setTimeout(function () {
-                    def2s.resolve();
-                    this.mov = false;
-                    this.slideTwice = false;
-                }, this.trans);
-                return def2s.promise();
-            });
-        chainDefSU.resolve();
-    }
-
-
-
-
-
 
 
 
