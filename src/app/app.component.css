@@ -339,6 +339,12 @@ The stripes in the hamburger button
     }
 }
 
+@media screen and (min-width: 1280px) and (max-height: 622px) {
+    #linksList {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
     .headerSpec {
         height: 80px;
@@ -443,6 +449,15 @@ The stripes in the hamburger button
         width: 40px;
         height: 40px;
         /*background-color: yellowgreen;*/
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) and (max-height: 494px) {
+    #linksList {
+        display: none;
+    }
+    #socialContainer {
+        display: none;
     }
 }
 
@@ -556,6 +571,15 @@ The stripes in the hamburger button
         width: 40px;
         height: 40px;
         /*background-color: yellowgreen;*/
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) and (max-height: 494px) {
+    #linksList {
+        display: none;
+    }
+    #socialContainer {
+        display: none;
     }
 }
 
@@ -675,6 +699,15 @@ The stripes in the hamburger button
     }
 }
 
+@media screen and (min-width: 736px) and (max-width:1023px) and (orientation:landscape) and (max-height: 100px) {
+    #linksList {
+        display: none;
+    }
+    #socialContainer {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) {
     .headerSpec {
         height: 80px;
@@ -788,6 +821,15 @@ The stripes in the hamburger button
         width: 40px;
         height: 40px;
         /*background-color: yellowgreen;*/
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) and (max-height: 100px) {
+    #linksList {
+        display: none;
+    }
+    #socialContainer {
+        display: none;
     }
 }
 
@@ -910,6 +952,15 @@ The stripes in the hamburger button
     }
 }
 
+@media screen and (max-width:735px) and (orientation:landscape) and (max-height: 100px) {
+    #linksList {
+        display: none;
+    }
+    #socialContainer {
+        display: none;
+    }
+}
+
 @media screen and (max-width:413px) and (orientation:portrait) {
     .headerSpec {
         height: 60px;
@@ -1024,5 +1075,14 @@ The stripes in the hamburger button
         width: 30px;
         height: 30px;
         /*background-color: yellowgreen;*/
+    }
+}
+
+@media screen and (max-width:413px) and (orientation:portrait) and (max-height: 100px) {
+    #linksList {
+        display: none;
+    }
+    #socialContainer {
+        display: none;
     }
 }

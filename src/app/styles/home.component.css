@@ -252,6 +252,15 @@ projectToRender {
     }
 }
 
+@media screen and (min-width: 1280px) and (max-height: 622px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
     #homeStrip {
         top: 18%;
@@ -359,6 +368,15 @@ projectToRender {
     }
     #section2 {
         background-image: url(../../public/images/IPicsL/background3.jpg);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) and (max-height: 622px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
     }
 }
 
@@ -470,6 +488,15 @@ projectToRender {
     }
     #section2 {
         background-image: url(../../public/images/IPicsP/background3.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) and (max-height: 622px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
     }
 }
 
@@ -585,6 +612,15 @@ projectToRender {
     }
 }
 
+@media screen and (min-width: 736px) and (max-width:1023px) and (orientation:landscape) and (max-height: 200px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) {
     #homeStrip {
         top: 70px;
@@ -695,6 +731,15 @@ projectToRender {
     }
     #section2 {
         background-image: url(../../public/images/MPicsP/background3.jpg);
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) and (max-height: 200px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
     }
 }
 
@@ -812,6 +857,15 @@ projectToRender {
     }
 }
 
+@media screen and (max-width:735px) and (orientation:landscape) and (max-height: 100px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
+    }
+}
+
 @media screen and (max-width:413px) and (orientation:portrait) {
     #homeStrip {
         top: 60px;
@@ -921,5 +975,14 @@ projectToRender {
     }
     #section2 {
         background-image: url(../../public/images/MPicsP/background3.jpg);
+    }
+}
+
+@media screen and (max-width:413px) and (orientation:portrait) and (max-height: 200px) {
+    #homeLine {
+        display: none;
+    }
+    #homeComment {
+        display: none;
     }
 }

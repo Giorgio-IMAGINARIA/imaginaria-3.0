@@ -45,6 +45,12 @@ a:hover .sideNavButton {
     }
 }
 
+@media screen and (min-width: 1280px) and (max-height: 300px) {
+    #sideNav {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
     #sideNav {
         top: calc(50% - 70px);
@@ -61,6 +67,12 @@ a:hover .sideNavButton {
     }
 }
 
+@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) and (max-height: 494px) {
+    #sideNav {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) {
     #sideNav {
         top: calc(50% - 49px);
@@ -74,6 +86,12 @@ a:hover .sideNavButton {
         width: 10px;
         height: 10px;
         box-shadow: 0 0 0 1px #1D1D1B;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) and (max-height: 494px) {
+    #sideNav {
+        display: none;
     }
 }
 
