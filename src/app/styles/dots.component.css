@@ -29,7 +29,7 @@ a:hover .sideNavButton {
     background-color: #333333;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) and (orientation:landscape) {
     #sideNav {
         top: calc(50% - 49px);
         /*background-color: #1c3e95;*/
@@ -45,29 +45,7 @@ a:hover .sideNavButton {
     }
 }
 
-@media screen and (min-width: 1280px) and (max-height: 300px) {
-    #sideNav {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
-    #sideNav {
-        top: calc(50% - 70px);
-        /*background-color: #1c3e95;*/
-        width: 19px;
-        height: 140px;
-        left: 43px;
-    }
-    .sideNavButton {
-        border: 1px solid #FFFFFF;
-        width: 15px;
-        height: 15px;
-        box-shadow: 0 0 0 1px #1D1D1B;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) and (max-height: 494px) {
+@media screen and (min-width: 1024px) and (orientation:landscape) and (max-height: 494px) {
     #sideNav {
         display: none;
     }

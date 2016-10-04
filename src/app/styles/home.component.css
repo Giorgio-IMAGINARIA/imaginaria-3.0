@@ -142,17 +142,15 @@ projectToRender {
     transition-timing-function: linear;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) and (orientation:landscape) {
     #homeStrip {
         top: 18%;
-        /*background-color: lightcoral;*/
     }
     #homeTitle {
         font-size: 41pt;
         letter-spacing: 8pt;
         height: 109px;
         line-height: 109px;
-        /*background-color: yellowgreen;*/
     }
     #homeLine {
         height: 2px;
@@ -164,7 +162,6 @@ projectToRender {
         letter-spacing: 1.2pt;
         line-height: 17pt;
         height: 109px;
-        /*background-color: bisque;*/
     }
     #ruiStrip {
         height: 220px;
@@ -174,7 +171,6 @@ projectToRender {
         letter-spacing: 1pt;
         height: 17pt;
         line-height: 16.5pt;
-        /*background-color: yellowgreen;*/
     }
     #ruiLine {
         height: 1px;
@@ -185,14 +181,12 @@ projectToRender {
         letter-spacing: 2.5pt;
         height: 42pt;
         line-height: 42pt;
-        /*background-color: darkslategray;*/
     }
     #ruiComment2 {
         font-size: 19pt;
         letter-spacing: 1pt;
         height: 19pt;
         line-height: 19pt;
-        /*background-color: fuchsia;*/
     }
     .ruiSpace {
         height: 20px;
@@ -205,7 +199,6 @@ projectToRender {
         font-size: 13.5pt;
         height: 13.5pt;
         line-height: 13.5pt;
-        /*background-color: yellowgreen;*/
     }
     #mbiLine {
         height: 1px;
@@ -213,7 +206,6 @@ projectToRender {
     }
     #mbiContainer {
         height: 90px;
-        /*background-color: red;*/
     }
     #mbiLogo {
         width: 90px;
@@ -222,21 +214,18 @@ projectToRender {
     #mbiInternal {
         width: 240px;
         height: 96px;
-        /*background-color: #009999;*/
     }
     #mbiComment1 {
         font-size: 25pt;
         letter-spacing: 0.5pt;
         height: 25pt;
         line-height: 25pt;
-        /*background-color: darkslategray;*/
     }
     #mbiComment2 {
         font-size: 16pt;
         letter-spacing: 1pt;
         height: 16pt;
         line-height: 16pt;
-        /*background-color: fuchsia;*/
     }
     .mbiSpace {
         height: 25px;
@@ -252,126 +241,7 @@ projectToRender {
     }
 }
 
-@media screen and (min-width: 1280px) and (max-height: 622px) {
-    #homeLine {
-        display: none;
-    }
-    #homeComment {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
-    #homeStrip {
-        top: 18%;
-        /*background-color: lightcoral;*/
-    }
-    #homeTitle {
-        font-size: 32pt;
-        letter-spacing: 6pt;
-        height: 100px;
-        line-height: 80px;
-        /*background-color: yellowgreen;*/
-    }
-    #homeLine {
-        height: 2px;
-        width: 270px;
-    }
-    #homeComment {
-        width: 600px;
-        font-size: 14pt;
-        letter-spacing: 1.2pt;
-        line-height: 18pt;
-        height: 130px;
-        /*background-color: bisque;*/
-    }
-    #ruiStrip {
-        height: 220px;
-    }
-    #ruiTitle {
-        font-size: 16.5pt;
-        letter-spacing: 1pt;
-        height: 17pt;
-        line-height: 16.5pt;
-        /*background-color: yellowgreen;*/
-    }
-    #ruiLine {
-        height: 1px;
-        width: 340px;
-    }
-    #ruiComment1 {
-        font-size: 42pt;
-        letter-spacing: 2.5pt;
-        height: 42pt;
-        line-height: 42pt;
-        /*background-color: darkslategray;*/
-    }
-    #ruiComment2 {
-        font-size: 19pt;
-        letter-spacing: 1pt;
-        height: 19pt;
-        line-height: 19pt;
-        /*background-color: fuchsia;*/
-    }
-    .ruiSpace {
-        height: 20px;
-    }
-    #mbiStrip {
-        width: 620px;
-        height: 280px;
-    }
-    #mbiTitle {
-        font-size: 18pt;
-        height: 13.5pt;
-        line-height: 13.5pt;
-        /*background-color: yellowgreen;*/
-    }
-    #mbiLine {
-        height: 1px;
-        width: 83%;
-    }
-    #mbiContainer {
-        height: 120px;
-        /*background-color: red;*/
-    }
-    #mbiLogo {
-        width: 120px;
-        height: 120px;
-    }
-    #mbiInternal {
-        width: 330px;
-        height: 120px;
-        /*background-color: #009999;*/
-    }
-    #mbiComment1 {
-        font-size: 35pt;
-        letter-spacing: 0.5pt;
-        height: 35pt;
-        line-height: 35pt;
-        /*background-color: darkslategray;*/
-    }
-    #mbiComment2 {
-        font-size: 22pt;
-        letter-spacing: 1pt;
-        height: 28pt;
-        line-height: 28pt;
-        /*background-color: fuchsia;*/
-    }
-    .mbiSpace {
-        height: 30px;
-    }
-    #section0 {
-        background-image: url(../../public/images/IPicsL/background1.jpg);
-    }
-    #section1 {
-        background-image: url(../../public/images/IPicsL/background2.jpg);
-    }
-    #section2 {
-        background-image: url(../../public/images/IPicsL/background3.jpg);
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) and (max-height: 622px) {
+@media screen and (min-width: 1024px) and (orientation:landscape) and (max-height: 622px) {
     #homeLine {
         display: none;
     }
