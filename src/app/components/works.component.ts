@@ -1,33 +1,49 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,trigger, state, style, transition, animate } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Hero } from '../models/hero';
-import { HeroService } from '../services/hero.service';
+import { BlurService } from '../services/blur.service';
+
 
 @Component({
     selector: 'my-works',
     templateUrl: '../templates/works.component.html',
-    styleUrls: ['../styles/works.component.css']
+    styleUrls: ['../styles/works.component.css'],
+    animations: [
+        trigger('toBlur', [
+            state('inactive', style({
+                "-webkit-filter": 'blur(0px)',
+                filter: 'blur(0px)'
+            })),
+            state('active', style({
+                "-webkit-filter": 'blur(10px)',
+                filter: 'blur(10px)'
+            })),
+            transition('inactive => active', animate('500ms ease-in')),
+            transition('active => inactive', animate('500ms ease-out'))
+        ])]
 
 })
 
 export class WorksComponent implements OnInit {
+    private blurStateString: string;
 
 
-    heroes: Hero[] = [];
+   
 
-    constructor(
-        private router: Router,
-        private heroService: HeroService) {
+    constructor(private blurService: BlurService) {
+                this.blurStateString = 'inactive';
+
     }
 
     ngOnInit() {
-        this.heroService.getHeroes()
-            .then(heroes => this.heroes = heroes.slice(1, 5));
-    }
+                this.checkBlurService();
 
-    gotoDetail(hero: Hero) {
-        let link = ['/detail', hero.id];
-        this.router.navigate(link);
     }
+ private checkBlurService(): void {
+        this.blurService.activeBlurStateObservable.subscribe(
+            response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
+            error => console.log('Error! Description: ' + error)
+        );
+    }
+    
 }
