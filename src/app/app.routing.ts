@@ -1,8 +1,8 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { HeroesComponent } from './components/heroes.component';
-import { DashboardComponent } from './components/dashboard.component';
-import { HeroDetailComponent } from './components/hero-detail.component';
+import { AboutComponent } from './components/about.component';
+import { WorksComponent } from './components/works.component';
+import { ContactComponent } from './components/contact.component';
 import { HomeComponent } from './components/home.component';
 
 
@@ -18,16 +18,16 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'dashboard',
-        component: DashboardComponent
+        path: 'works',
+        component: WorksComponent
     },
     {
-        path: 'heroes',
-        component: HeroesComponent
+        path: 'about',
+        component: AboutComponent
     },
     {
-        path: 'detail/:id',
-        component: HeroDetailComponent
+        path: 'contact',
+        component: ContactComponent
     },
 ];
 export const routing = RouterModule.forRoot(appRoutes);

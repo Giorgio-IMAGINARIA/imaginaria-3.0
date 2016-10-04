@@ -5,10 +5,11 @@ import { Hero } from '../models/hero';
 import { HeroService } from '../services/hero.service';
 
 @Component({
-  selector: 'my-hero-detail',
-  templateUrl: '../templates/hero-detail.component.html'
+  selector: 'my-contact',
+  templateUrl: '../templates/contact.component.html',
+  styleUrls: ['../styles/contact.component.css']
 })
-export class HeroDetailComponent implements OnInit {
+export class ContactComponent implements OnInit {
   hero: Hero;
 
   constructor(

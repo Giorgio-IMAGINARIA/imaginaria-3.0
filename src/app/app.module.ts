@@ -5,9 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 
-import { DashboardComponent } from './components/dashboard.component';
-import { HeroesComponent } from './components/heroes.component';
-import { HeroDetailComponent } from './components/hero-detail.component';
+import { WorksComponent } from './components/works.component';
+import { AboutComponent } from './components/about.component';
+import { ContactComponent } from './components/contact.component';
 import { HomeComponent } from './components/home.component';
 import { Dots } from './components/dots.component';
 import { WindmillBlueComponent } from './components/windmillBlue.component';
@@ -25,8 +25,6 @@ import { HeroService } from './services/hero.service';
 import { BlurService } from './services/blur.service';
 import { HandleProjectsService } from './services/handleProjects.service';
 
-
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -42,9 +40,9 @@ import { HandleProjectsService } from './services/handleProjects.service';
     LinkedInLogoComponent,
     FaceBookLogoComponent,
     AppComponent,
-    HeroesComponent,
-    DashboardComponent,
-    HeroDetailComponent,
+    AboutComponent,
+    WorksComponent,
+    ContactComponent,
     HomeComponent,
     Dots,
     GSAPBounceDirective,

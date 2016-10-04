@@ -5,12 +5,13 @@ import { Hero } from '../models/hero';
 import { HeroService } from '../services/hero.service';
 
 @Component({
-    selector: 'my-dashboard',
-    templateUrl: '../templates/dashboard.component.html'
+    selector: 'my-works',
+    templateUrl: '../templates/works.component.html',
+    styleUrls: ['../styles/works.component.css']
 
 })
 
-export class DashboardComponent implements OnInit {
+export class WorksComponent implements OnInit {
 
 
     heroes: Hero[] = [];
