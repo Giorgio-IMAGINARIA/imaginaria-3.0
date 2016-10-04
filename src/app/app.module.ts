@@ -18,7 +18,8 @@ import { GitHubLogoComponent } from './components/gitHubLogo.component';
 import { LinkedInLogoComponent } from './components/linkedInLogo.component';
 import { FaceBookLogoComponent } from './components/faceBookLogo.component';
 
-import { HighlightDirective } from './directives/highlight.directive';
+import { GSAPBounceDirective } from './directives/GSAPBounce.directive';
+import { GSAPRotateDirective } from './directives/GSAPRotate.directive';
 
 import { HeroService } from './services/hero.service';
 import { BlurService } from './services/blur.service';
@@ -46,7 +47,8 @@ import { HandleProjectsService } from './services/handleProjects.service';
     HeroDetailComponent,
     HomeComponent,
     Dots,
-    HighlightDirective
+    GSAPBounceDirective,
+    GSAPRotateDirective
   ],
   providers: [
     HeroService, BlurService, HandleProjectsService

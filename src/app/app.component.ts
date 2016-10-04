@@ -52,7 +52,6 @@ import { BlurService } from './services/blur.service';
 export class AppComponent implements OnInit {
     private initialBlurState: boolean;
     private blurStateString: string;
-
     private menuState: string;
 
     constructor(private blurService: BlurService) { }
