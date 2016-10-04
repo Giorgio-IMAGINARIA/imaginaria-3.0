@@ -1,33 +1,42 @@
-import { Component, OnInit } from '@angular/core';
-import { Hero } from '../models/hero';
-import { HeroService } from '../services/hero.service';
-import { Router } from '@angular/router';
+import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
+//Services
+import { BlurService } from '../services/blur.service';
 
 @Component({
   selector: 'my-about',
   templateUrl: '../templates/about.component.html',
-  styleUrls: ['../styles/about.component.css']
+  styleUrls: ['../styles/about.component.css'],
+  animations: [
+        trigger('toBlur', [
+            state('inactive', style({
+                "-webkit-filter": 'blur(0px)',
+                filter: 'blur(0px)'
+            })),
+            state('active', style({
+                "-webkit-filter": 'blur(10px)',
+                filter: 'blur(10px)'
+            })),
+            transition('inactive => active', animate('500ms ease-in')),
+            transition('active => inactive', animate('500ms ease-out'))
+        ])]
 
 })
 export class AboutComponent implements OnInit {
-  heroes: Hero[];
-  selectedHero: Hero;
+     private blurStateString: string;
 
-  constructor(
-    private router: Router,
-    private heroService: HeroService) { }
 
-  getHeroes() {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+  constructor(private blurService: BlurService) {
+     this.blurStateString = 'inactive';
   }
 
-  ngOnInit() {
-    this.getHeroes();
-  }
+   ngOnInit() {
+        this.checkBlurService();
 
-  onSelect(hero: Hero) { this.selectedHero = hero; }
-
-  gotoDetail() {
-    this.router.navigate(['/detail', this.selectedHero.id]);
-  }
+    }
+    private checkBlurService(): void {
+        this.blurService.activeBlurStateObservable.subscribe(
+            response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
+            error => console.log('Error! Description: ' + error)
+        );
+    }
 }
