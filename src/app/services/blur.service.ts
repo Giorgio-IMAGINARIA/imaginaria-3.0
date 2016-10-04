@@ -8,6 +8,7 @@ export class BlurService {
     public activeBlurStateSubject: Subject<boolean> = new Subject<boolean>();
     public activeBlurStateObservable: Observable<boolean> = this.activeBlurStateSubject.asObservable();
     setBlurState(nextState: boolean): void {
+        console.log('from Imaginaria blurService', nextState);
         this.activeBlurStateSubject.next(nextState);
     }
 }

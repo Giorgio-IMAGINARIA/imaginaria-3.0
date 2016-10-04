@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import { HandleProjectsService } from '../services/handleProjects.service';
 import { BlurService } from '../services/blur.service';
 
-
 declare let $: any;
 
 @Component({
@@ -13,28 +12,6 @@ declare let $: any;
     templateUrl: '../templates/home.component.html',
     styles: [require('../styles/home.component.css').toString()],
     animations: [
-        trigger('mask', [
-            state('inactive', style({
-                backgroundColor: 'transparent',
-                zIndex: '-1'
-            })),
-            state('active', style({
-                backgroundColor: '#000000',
-                zIndex: '2000'
-            })),
-            transition('inactive => active', animate('500ms ease-in')),
-            transition('active => inactive', animate('500ms ease-out'))
-        ]),
-        trigger('rightMenu', [
-            state('inactive', style({
-                transform: 'translateX(0px)'
-            })),
-            state('active', style({
-                transform: 'translateX(-251px)'
-            })),
-            transition('inactive => active', animate('500ms ease-in')),
-            transition('active => inactive', animate('500ms ease-out'))
-        ]),
         trigger('toBlur', [
             state('inactive', style({
                 "-webkit-filter": 'blur(0px)',
@@ -48,7 +25,9 @@ declare let $: any;
             transition('active => inactive', animate('500ms ease-out'))
         ])]
 })
+
 export class HomeComponent implements OnInit {
+    private blurStateString: string;
     private slideTwice: boolean;
     private mov: boolean;
     private trans: number;
@@ -56,7 +35,6 @@ export class HomeComponent implements OnInit {
     private eas: string;
     private cont: number;
     private blurred: boolean;
-    private menuState: string;
     private projectsState: number;
     constructor(private router: Router, private renderer: Renderer, private handleProjectsService: HandleProjectsService, private blurService: BlurService) {
         this.trans = 800;
@@ -68,7 +46,7 @@ export class HomeComponent implements OnInit {
         this.slideTwice = false;
         this.mov = false;
         this.cont = 0;
-        this.menuState = 'inactive';
+        this.blurStateString = 'inactive';
         this.projectsState = this.handleProjectsService.currentProjectsState;
         this.checkHandleProjectsService();
         this.checkBlurService();
@@ -109,7 +87,7 @@ export class HomeComponent implements OnInit {
 
     private checkBlurService(): void {
         this.blurService.activeBlurStateObservable.subscribe(
-            response => response ? this.blurred = true : this.blurred = false,
+            response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
             error => console.log('Error! Description: ' + error)
         );
     }
@@ -353,11 +331,5 @@ export class HomeComponent implements OnInit {
     }
 
 
-    toggleMenu() {
-        if (this.menuState === 'active') {
-            this.menuState = 'inactive';
-        } else {
-            this.menuState = 'active';
-        }
-    }
+  
 }

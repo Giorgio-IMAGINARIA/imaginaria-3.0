@@ -1,11 +1,11 @@
-import { Component, trigger, state, style, transition, animate, OnInit,  HostListener } from '@angular/core';
-import {WindmillBlueComponent} from './components/windmillBlue.component';
-import {WindmillRedComponent} from './components/windmillRed.component';
-import {WindmillWhiteComponent} from './components/windmillWhite.component';
-import {MbiLogoComponent} from './components/mbiLogo.component';
-import {GitHubLogoComponent} from './components/gitHubLogo.component';
-import {LinkedInLogoComponent} from './components/linkedInLogo.component';
-import {FaceBookLogoComponent} from './components/faceBookLogo.component';
+import { Component, trigger, state, style, transition, animate, OnInit, HostListener } from '@angular/core';
+import { WindmillBlueComponent } from './components/windmillBlue.component';
+import { WindmillRedComponent } from './components/windmillRed.component';
+import { WindmillWhiteComponent } from './components/windmillWhite.component';
+import { MbiLogoComponent } from './components/mbiLogo.component';
+import { GitHubLogoComponent } from './components/gitHubLogo.component';
+import { LinkedInLogoComponent } from './components/linkedInLogo.component';
+import { FaceBookLogoComponent } from './components/faceBookLogo.component';
 import { BlurService } from './services/blur.service';
 
 @Component({
@@ -51,13 +51,13 @@ import { BlurService } from './services/blur.service';
 })
 export class AppComponent implements OnInit {
     private initialBlurState: boolean;
-    private blurStateString: string = 'inactive';
+    private blurStateString: string;
 
     private menuState: string;
 
     constructor(private blurService: BlurService) { }
 
-  @HostListener('window:orientationchange', ['$event']) onorientationchange(event: any) {
+    @HostListener('window:orientationchange', ['$event']) onorientationchange(event: any) {
         location.reload();
     }
 
@@ -69,8 +69,11 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        this.blurStateString = 'inactive';
         this.menuState = 'inactive';
-
+        this.checkBlurService();
+    }
+    private checkBlurService(): void {
         this.blurService.activeBlurStateObservable.subscribe(
             response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
             error => console.log('Error! Description: ' + error)

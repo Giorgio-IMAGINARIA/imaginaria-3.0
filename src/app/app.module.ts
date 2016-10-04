@@ -19,7 +19,6 @@ import { LinkedInLogoComponent } from './components/linkedInLogo.component';
 import { FaceBookLogoComponent } from './components/faceBookLogo.component';
 
 import { HighlightDirective } from './directives/highlight.directive';
-import { BlurDirective } from './directives/blur.directive';
 
 import { HeroService } from './services/hero.service';
 import { BlurService } from './services/blur.service';
@@ -47,8 +46,7 @@ import { HandleProjectsService } from './services/handleProjects.service';
     HeroDetailComponent,
     HomeComponent,
     Dots,
-    HighlightDirective,
-    BlurDirective
+    HighlightDirective
   ],
   providers: [
     HeroService, BlurService, HandleProjectsService
