@@ -31,7 +31,7 @@ import { BlurService } from './services/blur.service';
                 transform: 'translateX(0px)'
             })),
             state('active', style({
-                transform: 'translateX(-251px)'
+                transform: 'translateX(-250px)'
             })),
             transition('inactive => active', animate('500ms ease-in')),
             transition('active => inactive', animate('500ms ease-out'))
