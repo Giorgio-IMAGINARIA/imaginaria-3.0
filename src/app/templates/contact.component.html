@@ -1,4 +1,4 @@
-<main>
+<main class="grad">
     <div class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter blurred">
         <div id="spaceHeader">
         </div>
@@ -11,15 +11,18 @@
                 </div>
                 <div id="socialContainerContacts" class="flexContainer flexContainerRow flexContainerRowHAlignSpaceAround flexContainerRowVAlignCenter">
                     <a href="https://github.com/Giorgio-IMAGINARIA/" target="_blank">
-                        <div id="link1" class="socialWrapContacts">
+                        <div [GSAPBounce]="'parent'" class="socialWrapContacts">
+                            <gitHubLogo></gitHubLogo>
                         </div>
                     </a>
                     <a href="http://uk.linkedin.com/pub/giorgio-mazzei/35/b01/a26" target="_blank">
-                        <div id="link2" class="socialWrapContacts">
+                        <div [GSAPBounce]="'parent'" class="socialWrapContacts">
+                            <linkedInLogo></linkedInLogo>
                         </div>
                     </a>
                     <a href="https://twitter.com/giorgiomazzei79" target="_blank">
-                        <div id="link3" class="socialWrapContacts">
+                        <div [GSAPBounce]="'parent'" class="socialWrapContacts">
+                            <faceBookLogo></faceBookLogo>
                         </div>
                     </a>
                 </div>
@@ -44,7 +47,7 @@
                     <input type="text" name="email" /><br />
                     <label for="message">Message <span>(required)</span></label>
                     <textarea name="message"></textarea><br/>
-                    <input type="submit" value="SUBMIT" name="submit" class="flexChildrenInColumnAlignRight" />
+                    <input [GSAPBounce]="'sameElement'" type="submit" value="SUBMIT" name="submit" class="flexChildrenInColumnAlignRight" />
                 </form>
             </div>
         </div>
