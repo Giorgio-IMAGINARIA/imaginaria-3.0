@@ -1,22 +1,20 @@
-<a GSAPRotate href="/index.html" id="logo0" [@toBlur]="blurStateString" class="logo blurred">
-    <windmillBlue></windmillBlue>
-</a>
-<a href="/index.html" id="logo1" [@toBlur]="blurStateString" class="logo blurred">
-    <windmillRed></windmillRed>
-</a>
-<a href="/index.html" id="logo2" [@toBlur]="blurStateString" class="logo blurred">
-    <windmillWhite></windmillWhite>
-</a>
-<div id="contactText" class="headerText0 headerSpec font-Roboto-L"> <span [@toBlur]="blurStateString" class="blurred">contact me</span> </div>
-<div id="phoneWrap" [@toBlur]="blurStateString" class="headerSpec blurred"> <a [GSAPBounce]="'parent'" id="phoneText" class="phoneTextCol0 font-Roboto-B" href="tel:00447415882971">0741 588 2971</a> </div>
-<div class="menuText headerText0 font-Roboto-L headerSpec"> <span [@toBlur]="blurStateString" class="blurred">menu</span> </div>
-<div id="hamburgerContainer" [@toBlur]="blurStateString" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec blurred">
-    <div [GSAPBounce]="'sameElement'" id="hamburger" (click)="toggleMenu()">
-        <div class="menuLine menuLineCol0"></div>
-        <div class="menuLine menuLineCol0"></div>
-        <div class="menuLine menuLineCol0"></div>
+<div id="mainHeader" [@toBlur]="blurStateString" class="headerSpec">
+    <a GSAPRotate href="/index.html" id="logo0" class="logo blurred">
+        <windmillBlack></windmillBlack>
+    </a>
+    <div id="contactText" class="headerText0 headerSpec font-Roboto-L"> <span class="blurred">contact me</span> </div>
+    <div id="phoneWrap" class="headerSpec blurred"> <a [GSAPBounce]="'parent'" id="phoneText" class="phoneTextCol0 font-Roboto-B" href="tel:00447415882971">0741 588 2971</a> </div>
+    <div class="menuText headerText0 font-Roboto-L headerSpec"> <span class="blurred">menu</span> </div>
+    <div id="hamburgerContainer" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec blurred">
+        <div [GSAPBounce]="'sameElement'" id="hamburger" (click)="toggleMenu()">
+            <div class="menuLine menuLineCol0"></div>
+            <div class="menuLine menuLineCol0"></div>
+            <div class="menuLine menuLineCol0"></div>
+        </div>
     </div>
 </div>
+
+
 <div id="rightMenu" [@rightMenu]="menuState" class="" [style.width.px]="menuWidth">
     <div class="closeText font-Roboto-L headerSpec"> close </div>
     <div [GSAPBounce]="'sameElement'" id="hamburgerContainerX" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec">

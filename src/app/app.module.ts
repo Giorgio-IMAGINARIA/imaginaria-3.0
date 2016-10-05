@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about.component';
 import { ContactComponent } from './components/contact.component';
 import { HomeComponent } from './components/home.component';
 import { Dots } from './components/dots.component';
+import { WindmillBlackComponent } from './components/windmillBlack.component';
 import { WindmillBlueComponent } from './components/windmillBlue.component';
 import { WindmillRedComponent } from './components/windmillRed.component';
 import { WindmillWhiteComponent } from './components/windmillWhite.component';
@@ -21,7 +22,6 @@ import { FaceBookLogoComponent } from './components/faceBookLogo.component';
 import { GSAPBounceDirective } from './directives/GSAPBounce.directive';
 import { GSAPRotateDirective } from './directives/GSAPRotate.directive';
 
-import { HeroService } from './services/hero.service';
 import { BlurService } from './services/blur.service';
 import { HandleProjectsService } from './services/handleProjects.service';
 
@@ -32,6 +32,7 @@ import { HandleProjectsService } from './services/handleProjects.service';
     routing
   ],
   declarations: [
+    WindmillBlackComponent,
     WindmillBlueComponent,
     WindmillRedComponent,
     WindmillWhiteComponent,
@@ -49,7 +50,7 @@ import { HandleProjectsService } from './services/handleProjects.service';
     GSAPRotateDirective
   ],
   providers: [
-    HeroService, BlurService, HandleProjectsService
+    BlurService, HandleProjectsService
   ],
   bootstrap: [AppComponent]
 })

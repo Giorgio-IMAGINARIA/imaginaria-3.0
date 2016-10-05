@@ -1,3 +1,14 @@
+#mainHeader {
+    /*height: 72px;*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #bfbfbf;
+}
+
 #logo0 {
     display: inline;
     opacity: 1.0;
@@ -60,15 +71,7 @@
 }
 
 .phoneTextCol0 {
-    color: #009999;
-}
-
-.phoneTextCol1 {
-    color: #CC0000;
-}
-
-.phoneTextCol2 {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .menuText {
@@ -104,15 +107,7 @@
 }
 
 .menuLineCol0 {
-    background-color: #009999;
-}
-
-.menuLineCol1 {
-    background-color: #CA0000;
-}
-
-.menuLineCol2 {
-    background-color: #FFFFFF;
+    background-color: #000000;
 }
 
 #rightMenu {

@@ -145,12 +145,12 @@ export class HomeComponent implements OnInit {
         let ns = cs + 1;
         $("#contentsReserve #section" + ns).clone().appendTo("main");
         $("#sideNav a Div").removeClass("sideNavButtonChecked" + cs);
-        $("#phoneText").removeClass("phoneTextCol" + cs);
-        $(".menuLine").removeClass("menuLineCol" + cs);
-        $("#contactText").removeClass("headerText" + cs);
-        $(".menuText").removeClass("headerText" + cs);
-        $("#logo" + cs).velocity("fadeOut", { duration: this.trans });
-        $("#logo" + ns).velocity("fadeIn", { duration: this.trans });
+        // $("#phoneText").removeClass("phoneTextCol" + cs);
+        // $(".menuLine").removeClass("menuLineCol" + cs);
+        // $("#contactText").removeClass("headerText" + cs);
+        // $(".menuText").removeClass("headerText" + cs);
+        // $("#logo" + cs).velocity("fadeOut", { duration: this.trans });
+        // $("#logo" + ns).velocity("fadeIn", { duration: this.trans });
 
         this.wh = $(window).height();
         $("main #section" + ns).css('top', this.wh);
@@ -172,10 +172,10 @@ export class HomeComponent implements OnInit {
         $("main #section" + cs).css("transition-timing-function", this.eas);
 
         $("#sideNavButton" + ns).addClass("sideNavButtonChecked" + ns);
-        $("#phoneText").addClass("phoneTextCol" + ns);
-        $(".menuLine").addClass("menuLineCol" + ns);
-        $("#contactText").addClass("headerText" + ns);
-        $(".menuText").addClass("headerText" + ns);
+        // $("#phoneText").addClass("phoneTextCol" + ns);
+        // $(".menuLine").addClass("menuLineCol" + ns);
+        // $("#contactText").addClass("headerText" + ns);
+        // $(".menuText").addClass("headerText" + ns);
 
         $("main #section" + ns).css("-webkit-transform", "translateY(-" + this.wh + "px)");
         $("main #section" + ns).css("-moz-transform", "translateY(-" + this.wh + "px)");
@@ -202,12 +202,12 @@ export class HomeComponent implements OnInit {
         $("#contentsReserve #section" + cs).clone().appendTo("main");
         let ns = cs - 1;
         $("#sideNav a Div").removeClass("sideNavButtonChecked" + cs);
-        $("#phoneText").removeClass("phoneTextCol" + cs);
-        $(".menuLine").removeClass("menuLineCol" + cs);
-        $("#contactText").removeClass("headerText" + cs);
-        $(".menuText").removeClass("headerText" + cs);
-        $("#logo" + cs).velocity("fadeOut", { duration: this.trans });
-        $("#logo" + ns).velocity("fadeIn", { duration: this.trans });
+        // $("#phoneText").removeClass("phoneTextCol" + cs);
+        // $(".menuLine").removeClass("menuLineCol" + cs);
+        // $("#contactText").removeClass("headerText" + cs);
+        // $(".menuText").removeClass("headerText" + cs);
+        // $("#logo" + cs).velocity("fadeOut", { duration: this.trans });
+        // $("#logo" + ns).velocity("fadeIn", { duration: this.trans });
 
         $("#contentsReserve #section" + ns).clone().prependTo("main");
         $("#sideNav a Div").removeClass("sideNavButtonChecked" + cs);
@@ -232,11 +232,11 @@ export class HomeComponent implements OnInit {
         $("main #section" + cs).css("transition-timing-function", this.eas);
 
         $("#sideNavButton" + ns).addClass("sideNavButtonChecked" + ns);
-        $("#logo").addClass("logo" + ns);
-        $("#phoneText").addClass("phoneTextCol" + ns);
-        $(".menuLine").addClass("menuLineCol" + ns);
-        $("#contactText").addClass("headerText" + ns);
-        $(".menuText").addClass("headerText" + ns);
+        // $("#logo").addClass("logo" + ns);
+        // $("#phoneText").addClass("phoneTextCol" + ns);
+        // $(".menuLine").addClass("menuLineCol" + ns);
+        // $("#contactText").addClass("headerText" + ns);
+        // $(".menuText").addClass("headerText" + ns);
 
         $("main #section" + ns).css("-webkit-transform", "translateY(" + this.wh + "px)");
         $("main #section" + ns).css("-moz-transform", "translateY(" + this.wh + "px)");
