@@ -188,46 +188,49 @@ ul#linksList li {
 
 @media screen and (min-width: 1024px) and (orientation:landscape) {
     .headerSpec {
-        height: 80px;
-        line-height: 80px;
-        font-size: 12pt;
+        height: 40px;
+        line-height: 40px;
+        font-size: 10pt;
         letter-spacing: 2pt;
     }
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         margin-left: 10px;
         background-size: 80px 80px;
     }
     #contactText {
-        font-size: 12pt;
+        font-size: 10pt;
         letter-spacing: 2pt;
-        line-height: 80px;
-        height: 80px;
-        width: 165px;
-        right: calc(0% + 350px);
+        line-height: 40px;
+        height: 40px;
+        width: 120px;
+        right: calc(0% + 300px);
     }
     #phoneWrap {
         width: 150px;
-        right: calc(0% + 200px);
+        right: calc(0% + 150px);
     }
     .menuText {
-        width: 100px;
-        right: calc(0% + 100px);
+        width: 60px;
+        right: calc(0% + 40px);
     }
     .closeText {
         width: 100px;
         right: calc(0% + 100px);
     }
     #hamburgerContainer {
-        width: 100px;
+        width: 40px;
     }
     #hamburgerContainerX {
         width: 100px;
     }
     #hamburger {
-        height: 22px;
-        width: 38px;
+        height: 20px;
+        width: 20px;
+    }
+    #menuIcon {
+        font-size: 15pt;
     }
     .menuLine {
         height: 2px;

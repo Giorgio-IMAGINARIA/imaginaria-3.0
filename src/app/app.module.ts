@@ -11,9 +11,6 @@ import { ContactComponent } from './components/contact.component';
 import { HomeComponent } from './components/home.component';
 import { Dots } from './components/dots.component';
 import { WindmillBlackComponent } from './components/windmillBlack.component';
-import { WindmillBlueComponent } from './components/windmillBlue.component';
-import { WindmillRedComponent } from './components/windmillRed.component';
-import { WindmillWhiteComponent } from './components/windmillWhite.component';
 import { MbiLogoComponent } from './components/mbiLogo.component';
 import { GitHubLogoComponent } from './components/gitHubLogo.component';
 import { LinkedInLogoComponent } from './components/linkedInLogo.component';
@@ -33,9 +30,6 @@ import { HandleProjectsService } from './services/handleProjects.service';
   ],
   declarations: [
     WindmillBlackComponent,
-    WindmillBlueComponent,
-    WindmillRedComponent,
-    WindmillWhiteComponent,
     MbiLogoComponent,
     GitHubLogoComponent,
     LinkedInLogoComponent,

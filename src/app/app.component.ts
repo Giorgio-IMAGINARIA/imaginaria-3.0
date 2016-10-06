@@ -1,7 +1,4 @@
 import { Component, trigger, state, style, transition, animate, OnInit, HostListener } from '@angular/core';
-import { WindmillBlueComponent } from './components/windmillBlue.component';
-import { WindmillRedComponent } from './components/windmillRed.component';
-import { WindmillWhiteComponent } from './components/windmillWhite.component';
 import { MbiLogoComponent } from './components/mbiLogo.component';
 import { GitHubLogoComponent } from './components/gitHubLogo.component';
 import { LinkedInLogoComponent } from './components/linkedInLogo.component';

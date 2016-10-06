@@ -2,14 +2,12 @@
     <a GSAPRotate href="/index.html" id="logo0" class="logo blurred">
         <windmillBlack></windmillBlack>
     </a>
-    <div id="contactText" class="headerText0 headerSpec font-Roboto-L"> <span class="blurred">contact me</span> </div>
+    <div id="contactText" class="headerText0 headerSpec font-Roboto-L flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter"> <span class="blurred">contact me</span> </div>
     <div id="phoneWrap" class="headerSpec blurred"> <a [GSAPBounce]="'parent'" id="phoneText" class="phoneTextCol0 font-Roboto-B" href="tel:00447415882971">0741 588 2971</a> </div>
-    <div class="menuText headerText0 font-Roboto-L headerSpec"> <span class="blurred">menu</span> </div>
+    <div class="menuText headerText0 font-Roboto-L headerSpec flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter"> <span class="blurred">menu</span> </div>
     <div id="hamburgerContainer" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec blurred">
-        <div [GSAPBounce]="'sameElement'" id="hamburger" (click)="toggleMenu()">
-            <div class="menuLine menuLineCol0"></div>
-            <div class="menuLine menuLineCol0"></div>
-            <div class="menuLine menuLineCol0"></div>
+        <div [GSAPBounce]="'sameElement'" id="hamburger" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter" (click)="toggleMenu()">
+            <i id="menuIcon" class="fa fa-bars" aria-hidden="true"></i>
         </div>
     </div>
 </div>
