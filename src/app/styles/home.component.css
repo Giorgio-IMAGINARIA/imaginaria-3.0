@@ -147,10 +147,10 @@ projectToRender {
         top: 18%;
     }
     #homeTitle {
-        font-size: 41pt;
-        letter-spacing: 8pt;
-        height: 109px;
-        line-height: 109px;
+        font-size: 30pt;
+        letter-spacing: 3pt;
+        height: 80px;
+        line-height: 80px;
     }
     #homeLine {
         height: 2px;
@@ -159,7 +159,7 @@ projectToRender {
     #homeComment {
         width: 600px;
         font-size: 12pt;
-        letter-spacing: 1.2pt;
+        letter-spacing: 0.5pt;
         line-height: 17pt;
         height: 109px;
     }
@@ -256,10 +256,10 @@ projectToRender {
         /*background-color: lightcoral;*/
     }
     #homeTitle {
-        font-size: 34pt;
-        letter-spacing: 6pt;
-        height: 120px;
-        line-height: 80px;
+        font-size: 30pt;
+        letter-spacing: 3pt;
+        height: 100px;
+        line-height: 100px;
         /*background-color: yellowgreen;*/
     }
     #homeLine {
@@ -268,8 +268,8 @@ projectToRender {
     }
     #homeComment {
         width: 620px;
-        font-size: 16pt;
-        letter-spacing: 1pt;
+        font-size: 12pt;
+        letter-spacing: 0.5pt;
         line-height: 19pt;
         height: 140px;
         /*background-color: bisque;*/
@@ -510,7 +510,7 @@ projectToRender {
     }
     #homeComment {
         width: 360px;
-        font-size: 12pt;
+        font-size: 8pt;
         letter-spacing: 0.2pt;
         line-height: 16pt;
         height: 120px;
@@ -621,7 +621,7 @@ projectToRender {
     }
     #homeTitle {
         font-size: 18pt;
-        letter-spacing: 4pt;
+        letter-spacing: 2pt;
         height: 50px;
         line-height: 50px;
         /*background-color: yellowgreen;*/
@@ -632,7 +632,7 @@ projectToRender {
     }
     #homeComment {
         width: 310px;
-        font-size: 6pt;
+        font-size: 7pt;
         letter-spacing: 0.1pt;
         line-height: 8pt;
         height: 50px;
@@ -743,7 +743,7 @@ projectToRender {
     }
     #homeTitle {
         font-size: 16pt;
-        letter-spacing: 3pt;
+        letter-spacing: 1pt;
         height: 40px;
         line-height: 40px;
         /*background-color: yellowgreen;*/
@@ -754,7 +754,7 @@ projectToRender {
     }
     #homeComment {
         width: 250px;
-        font-size: 7pt;
+        font-size: 10pt;
         letter-spacing: 0.1pt;
         line-height: 12pt;
         height: 70px;

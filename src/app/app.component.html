@@ -14,9 +14,8 @@
 
 
 <div id="rightMenu" [@rightMenu]="menuState" class="" [style.width.px]="menuWidth">
-    <div class="closeText font-Roboto-L headerSpec"> close </div>
-    <div [GSAPBounce]="'sameElement'" id="hamburgerContainerX" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec">
-        <div id="hamburgerX" (click)="toggleMenu()"> </div>
+    <div [GSAPBounce]="'sameElement'" id="hamburgerContainerX" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter headerSpec" (click)="toggleMenu()">
+        <i class="fa fa-times" aria-hidden="true"></i>
     </div>
     <!-- Global Navigation -->
     <nav id="linkNav">
