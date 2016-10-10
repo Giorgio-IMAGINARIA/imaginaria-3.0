@@ -17,15 +17,16 @@ a:hover .sideNavButton {
     background-color: #5E5E5E;
 }
 
-.sideNavButtonChecked0 {
+
+/*.sideNavButtonChecked0 {
     background-color: #009393;
 }
 
 .sideNavButtonChecked1 {
     background-color: #CB0000;
-}
+}*/
 
-.sideNavButtonChecked2 {
+.sideNavButtonChecked {
     background-color: #333333;
 }
 
