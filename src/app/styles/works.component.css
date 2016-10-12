@@ -1,15 +1,3 @@
-#imaginaria {
-    border-left-color: #009393;
-}
-
-#rui {
-    border-left-color: #CB0000;
-}
-
-#italians {
-    border-left-color: #333333;
-}
-
 h1 a {
     color: #000000;
     -webkit-transition: color 0.3s linear;
@@ -26,14 +14,15 @@ h1 a:hover {
 article {
     border-left-width: 10px;
     border-left-style: solid;
+    border-left-color: #009393;
 }
 
 article p {
     text-align: justify;
 }
 
-article p:last-child {
-    margin-bottom: 0;
+article a:hover {
+    color: #dd1b1b;
 }
 
 .subtitle {
@@ -52,22 +41,21 @@ article p:last-child {
     border-left-color: #00AF85;
 }
 
+#spaceHeader {
+    width: 100%;
+}
+
+#spaceFooter {
+    width: 100%;
+}
+
 @media screen and (min-width: 1280px) {
-    article time {
-        font-size: 15px;
-        vertical-align: bottom;
-        letter-spacing: 1pt;
-    }
     .firstArticle {
         margin-top: 100px;
-        /*background-color: #003580;*/
     }
     article {
         width: 800px;
         padding-left: 30px;
-    }
-    .internalArticle {
-        margin-top: 100px;
         margin-bottom: 100px;
     }
     h1 {
@@ -79,28 +67,25 @@ article p:last-child {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 1pt;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 50px;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width:1279px) and (orientation:landscape) {
-    article time {
-        font-size: 15px;
-        vertical-align: bottom;
-        letter-spacing: 1pt;
-    }
     .firstArticle {
         margin-top: 100px;
-        /*background-color: #003580;*/
     }
     article {
         width: 80%;
         padding-left: 30px;
-    }
-    .internalArticle {
-        margin-top: 100px;
         margin-bottom: 100px;
     }
     h1 {
@@ -112,28 +97,25 @@ article p:last-child {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 1pt;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 50px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) {
-    article time {
-        font-size: 15px;
-        vertical-align: bottom;
-        letter-spacing: 1pt;
-    }
     .firstArticle {
         margin-top: 80px;
-        /*background-color: #003580;*/
     }
     article {
         width: 78%;
         padding-left: 30px;
-    }
-    .internalArticle {
-        margin-top: 100px;
         margin-bottom: 100px;
     }
     h1 {
@@ -145,18 +127,19 @@ article p:last-child {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 1pt;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 50px;
     }
 }
 
 @media screen and (min-width: 736px) and (max-width:1023px) and (orientation:landscape) {
-    article time {
-        font-size: 13px;
-        vertical-align: bottom;
-        letter-spacing: 0.5pt;
-    }
     .firstArticle {
         margin-top: 40px;
         /*background-color: #003580;*/
@@ -164,9 +147,6 @@ article p:last-child {
     article {
         width: 80%;
         padding-left: 10px;
-    }
-    .internalArticle {
-        margin-top: 50px;
         margin-bottom: 50px;
     }
     h1 {
@@ -178,28 +158,25 @@ article p:last-child {
         font-size: 15px;
         line-height: 20px;
         letter-spacing: 0.5pt;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 40px;
     }
 }
 
 @media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) {
-    article time {
-        font-size: 13px;
-        vertical-align: bottom;
-        letter-spacing: 0.5pt;
-    }
     .firstArticle {
         margin-top: 40px;
-        /*background-color: #003580;*/
     }
     article {
         width: 85%;
         padding-left: 10px;
-    }
-    .internalArticle {
-        margin-top: 50px;
         margin-bottom: 50px;
     }
     h1 {
@@ -211,28 +188,25 @@ article p:last-child {
         font-size: 15px;
         line-height: 20px;
         letter-spacing: 0.5pt;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 40px;
     }
 }
 
 @media screen and (max-width:735px) and (orientation:landscape) {
-    article time {
-        font-size: 12px;
-        vertical-align: bottom;
-        letter-spacing: 0.5pt;
-    }
     .firstArticle {
         margin-top: 20px;
-        /*background-color: #003580;*/
     }
     article {
         width: 85%;
         padding-left: 10px;
-    }
-    .internalArticle {
-        margin-top: 30px;
         margin-bottom: 30px;
     }
     h1 {
@@ -244,18 +218,19 @@ article p:last-child {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.5pt;
-        margin-top: 18px;
-        margin-bottom: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 20px;
     }
 }
 
 @media screen and (max-width:413px) and (orientation:portrait) {
-    article time {
-        font-size: 12px;
-        vertical-align: bottom;
-        letter-spacing: 0.5pt;
-    }
     .firstArticle {
         margin-top: 20px;
         /*background-color: #003580;*/
@@ -263,9 +238,6 @@ article p:last-child {
     article {
         width: 85%;
         padding-left: 10px;
-    }
-    .internalArticle {
-        margin-top: 30px;
         margin-bottom: 30px;
     }
     h1 {
@@ -277,8 +249,14 @@ article p:last-child {
         font-size: 13px;
         line-height: 20px;
         letter-spacing: 0.5pt;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 61px;
+    }
+    #spaceFooter {
+        height: 20px;
     }
 }

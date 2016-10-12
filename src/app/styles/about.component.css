@@ -31,6 +31,14 @@ article p:last-child {
     margin-bottom: 0;
 }
 
+#spaceHeader {
+    width: 100%;
+}
+
+#spaceFooter {
+    width: 100%;
+}
+
 @media screen and (min-width: 1280px) {
     .firstArticle {
         margin-top: 100px;
@@ -56,6 +64,12 @@ article p:last-child {
         margin-top: 50px;
         margin-bottom: 50px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 50px;
     }
 }
 
@@ -85,6 +99,12 @@ article p:last-child {
         margin-bottom: 50px;
         /*background-color: green;*/
     }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 50px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width:1279px) and (orientation:portrait) {
@@ -112,6 +132,12 @@ article p:last-child {
         margin-top: 50px;
         margin-bottom: 50px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 50px;
     }
 }
 
@@ -141,6 +167,12 @@ article p:last-child {
         margin-bottom: 25px;
         /*background-color: green;*/
     }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 40px;
+    }
 }
 
 @media screen and (min-width: 414px) and (max-width:767px) and (orientation:portrait) {
@@ -168,6 +200,12 @@ article p:last-child {
         margin-top: 25px;
         margin-bottom: 25px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 40px;
     }
 }
 
@@ -197,6 +235,12 @@ article p:last-child {
         margin-bottom: 18px;
         /*background-color: green;*/
     }
+    #spaceHeader {
+        height: 81px;
+    }
+    #spaceFooter {
+        height: 20px;
+    }
 }
 
 @media screen and (max-width:413px) and (orientation:portrait) {
@@ -224,5 +268,11 @@ article p:last-child {
         margin-top: 16px;
         margin-bottom: 16px;
         /*background-color: green;*/
+    }
+    #spaceHeader {
+        height: 61px;
+    }
+    #spaceFooter {
+        height: 20px;
     }
 }
