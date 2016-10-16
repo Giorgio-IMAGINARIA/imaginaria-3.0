@@ -65,20 +65,15 @@ html a {
 
 /* --------------------------------------- */
 
-.flexContainer {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+.flexContainer{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
-.flexContainerColumn {
+.flexContainerColumn{
     -webkit-box-direction: reverse;
     -moz-box-direction: reverse;
     -webkit-box-orient: vertical;
@@ -88,82 +83,85 @@ html a {
     flex-direction: column;
 }
 
-.flexContainerRow {
+.flexContainerRow{
     box-direction: normal;
     -moz-box-direction: normal;
     -webkit-box-direction: normal;
-    -moz-box-orient: horizontal;
-    /* Mozilla */
-    -webkit-box-orient: horizontal;
-    /* WebKit */
-    box-orient: horizontal;
-    /* As specified */
+    -moz-box-orient: horizontal;      /* Mozilla */
+    -webkit-box-orient: horizontal;   /* WebKit */
+    box-orient: horizontal;           /* As specified */
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
 }
 
-.flexContainerColumnHAlignCenter {
-    -webkit-box-align: center;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-align: center;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    -ms-flex-align: center;
-    /* TWEENER - IE 10 */
-    -webkit-align-items: center;
-    /* NEW - Chrome */
+.flexContainerColumnHAlignCenter{
+    -webkit-box-align: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-align: center;     /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-align: center;  /* TWEENER - IE 10 */
+    -webkit-align-items: center;  /* NEW - Chrome */
     align-items: center;
 }
 
-.flexContainerRowHAlignCenter {
-    -webkit-box-pack: center;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-pack: center;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    -ms-flex-pack: center;
-    /* TWEENER - IE 10 */
-    -webkit-justify-content: center;
-    /* NEW - Chrome */
+.flexContainerRowHAlignCenter{
+    -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: center;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: center;  /* TWEENER - IE 10 */
+    -webkit-justify-content: center;  /* NEW - Chrome */
     justify-content: center;
 }
-
-.flexContainerRowHAlignSpaceAround {
-    -webkit-justify-content: space-around;
-    /* Safari 6.1+ */
+.flexContainerRowHAlignSpaceAround{
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
     -moz-justify-content: space-around;
     -ms-justify-content: space-around;
     justify-content: space-around;
 }
 
-.flexContainerRowVAlignCenter {
-    -webkit-box-align: center;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-align: center;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    -ms-flex-align: center;
-    /* TWEENER - IE 10 */
-    -webkit-align-items: center;
-    /* NEW - Chrome */
+.flexContainerRowVAlignCenter{
+    -webkit-box-align: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-align: center;     /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-align: center;  /* TWEENER - IE 10 */
+    -webkit-align-items: center;  /* NEW - Chrome */
     align-items: center;
 }
 
-.flexContainerColumnVAlignCenter {
-    -webkit-box-pack: center;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-pack: center;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    -ms-flex-pack: center;
-    /* TWEENER - IE 10 */
-    -webkit-justify-content: center;
-    /* NEW - Chrome */
+.flexContainerColumnVAlignCenter{
+    -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: center;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: center;  /* TWEENER - IE 10 */
+    -webkit-justify-content: center;  /* NEW - Chrome */
     justify-content: center;
 }
 
-.flexContainerColumnSpaceBetween {
+.flexContainerRowHAlignSpaceBetween{
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
+}
+.flexContainerRowHAlignJustifyRight{
+    -webkit-box-pack: end;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: end;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: end;  /* TWEENER - IE 10 */
+    -webkit-justify-content: flex-end;  /* NEW - Chrome */
+    justify-content: flex-end;
+}
+.flexContainerRowHAlignJustifyLeft{
+    -webkit-box-pack: start;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: start;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: start;  /* TWEENER - IE 10 */
+    -webkit-justify-content: flex-start;  /* NEW - Chrome */
+    justify-content: flex-start;
+}
+.flexContainerRowWrap{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexChildrenInColumnAlignRight{
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
 }
 
 

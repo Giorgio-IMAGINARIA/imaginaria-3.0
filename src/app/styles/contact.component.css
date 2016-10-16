@@ -1,22 +1,24 @@
 /*-------------------------------------------------Main Content-------------------------------------------------------*/
 
 .grad {
-    background: -webkit-linear-gradient(#FFFFFF, #D9D9D9);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFFFFF, #D9D9D9);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFFFFF, #D9D9D9);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFFFFF, #D9D9D9);
-    /* Standard syntax */
+    background: -webkit-linear-gradient(#FFFFFF, #D9D9D9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFFFF, #D9D9D9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFFFF, #D9D9D9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFFFF, #D9D9D9); /* Standard syntax */
 }
-
-#spaceHeader {
-    width: 100%;
+main{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    /*background-color: black;*/
+    overflow: auto;
 }
-
-#spaceFooter {
-    width: 100%;
+#spaceHeader{
+    width:100%;
+}
+#spaceFooter{
+    width:100%;
 }
 
 textarea {
@@ -103,6 +105,7 @@ form {
     }
     #contactForm {
         width: 42%;
+        height: 692px;
         /*background-color: green;*/
     }
     .contactsTitle {
@@ -133,6 +136,9 @@ form {
         width: inherit;
         height: inherit;
         background-size: 60px 60px;
+    }
+    form{
+        height:602px;
     }
     label {
         margin-top: 25px;
@@ -183,6 +189,7 @@ form {
     }
     #contactForm {
         width: 44%;
+        height: 640px;
         /*background-color: green;*/
     }
     .contactsTitle {
@@ -213,6 +220,9 @@ form {
         width: inherit;
         height: inherit;
         background-size: 50px 50px;
+    }
+    form{
+        height:550px;
     }
     label {
         margin-top: 17px;

@@ -1,4 +1,4 @@
-<main class="grad">
+<main [@toBlur]="blurStateString" class="grad">
     <div class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter blurred">
         <div id="spaceHeader">
         </div>
@@ -38,15 +38,19 @@
                 <div class="contactsTitle font-Roboto-L">
                     <div>send me a message</div>
                 </div>
-                <form method="post" class="font-Roboto-L flexContainer flexContainerColumn">
+                <form method="post" class="font-Roboto-L flexContainer flexContainerColumn flexContainerRowHAlignSpaceBetween">
                     <label for="name">Name <span>(required)</span></label>
-                    <input type="text" name="name" /><br />
+                    <input type="text" name="name" />
+                    <!--<br/>-->
                     <label for="number">Contact Number</label>
-                    <input type="text" name="number" /><br />
+                    <input type="text" name="number" />
+                    <!--<br/>-->
                     <label for="email">Email Address <span>(required)</span></label>
-                    <input type="text" name="email" /><br />
+                    <input type="text" name="email" />
+                    <!--<br/>-->
                     <label for="message">Message <span>(required)</span></label>
-                    <textarea name="message"></textarea><br/>
+                    <textarea name="message"></textarea>
+                    <!--<br/>-->
                     <input [GSAPBounce]="'sameElement'" type="submit" value="SUBMIT" name="submit" class="flexChildrenInColumnAlignRight" />
                 </form>
             </div>
