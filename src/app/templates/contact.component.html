@@ -20,7 +20,7 @@
                             <linkedInLogo></linkedInLogo>
                         </div>
                     </a>
-                    <a href="https://twitter.com/giorgiomazzei79" target="_blank">
+                    <a href="https://www.facebook.com/giorgio.mazzei.7737" target="_blank">
                         <div [GSAPBounce]="'parent'" class="socialWrapContacts">
                             <faceBookLogo></faceBookLogo>
                         </div>
@@ -29,29 +29,26 @@
                 <div id="meet" class="contactsTitle font-Roboto-L">
                     <div>meet me in london</div>
                 </div>
-                <div id="map">
-                    <div id="mapFrame">
-                    </div>
-                </div>
+              <div id="map"></div>
             </div>
             <div id="contactForm">
                 <div class="contactsTitle font-Roboto-L">
                     <div>send me a message</div>
                 </div>
-                <form method="post" class="font-Roboto-L flexContainer flexContainerColumn flexContainerRowHAlignSpaceBetween">
+                <form action="" (ngSubmit)="onSubmit()" #contactForm="ngForm" class="font-Roboto-L flexContainer flexContainerColumn flexContainerRowHAlignSpaceBetween">
                     <label for="name">Name <span>(required)</span></label>
-                    <input type="text" name="name" />
+                    <input required type="text" [(ngModel)]="model.name" name="name" #name="ngModel" />
                     <!--<br/>-->
                     <label for="number">Contact Number</label>
-                    <input type="text" name="number" />
+                    <input type="text" [(ngModel)]="model.phone" name="phone" />
                     <!--<br/>-->
-                    <label for="email">Email Address <span>(required)</span></label>
-                    <input type="text" name="email" />
+                    <label for="email">Email Address <span>(valid/required)</span></label>
+                    <input required type="text" [(ngModel)]="model.email" name="email" #name="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" />
                     <!--<br/>-->
                     <label for="message">Message <span>(required)</span></label>
-                    <textarea name="message"></textarea>
+                    <textarea required [(ngModel)]="model.message" name="message" #name="ngModel"></textarea>
                     <!--<br/>-->
-                    <input [GSAPBounce]="'sameElement'" type="submit" value="SUBMIT" name="submit" class="flexChildrenInColumnAlignRight" />
+                    <button [disabled]="!contactForm.form.valid" [GSAPBounce]="'sameElement'" type="submit" name="submit" class="flexChildrenInColumnAlignRight">SUBMIT</button>
                 </form>
             </div>
         </div>

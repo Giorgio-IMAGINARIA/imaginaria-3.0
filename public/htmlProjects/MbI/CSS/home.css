@@ -1,0 +1,281 @@
+﻿/*********************************************************************************
+************************************-MEDIA1-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 951px) {
+
+/********************************-CONTENTS-***************************************/
+
+    #contents {
+        padding-top:370px;
+        padding-bottom: 300px;
+        /*padding-bottom: 385px;*/ /* must be same height as the footer */
+        height:auto;
+    }
+    #slideshow {
+        height: 150px;
+        line-height: 150px;
+        width: 800px;
+        
+    }
+    #slideshow p{
+    font-size:45px;
+    width:700px;
+    margin-bottom:-35px;
+}
+    .circle {
+	width: 20px;
+	height: 20px; 
+}
+    #bullets{
+    width:160px;
+}
+#C0{
+    margin-right:50px;
+}
+#C1{
+    margin-right:50px;
+}
+}
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 701px) and (max-width: 950px) and (orientation:portrait) {
+
+/********************************-CONTENTS-***************************************/
+
+    #contents {
+        padding-top:400px;
+        padding-bottom: 300px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+    }
+    #slideshow {
+        height: 120px;
+        line-height: 120px;
+        width: 70%;
+    }
+    #slideshow p{
+    font-size:27px;
+    width:400px;
+    margin-bottom:-30px;
+}
+    .circle {
+	width: 15px;
+	height: 15px; 
+}
+    #bullets{
+    width:105px;
+}
+#C0{
+    margin-right:30px;
+}
+#C1{
+    margin-right:30px;
+}
+}
+/*********************************************************************************
+************************************-MEDIA3-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 451px) and (max-width: 700px) and (orientation:portrait) {
+
+/********************************-CONTENTS-***************************************/
+
+    #contents {
+        padding-top:400px;
+        padding-bottom: 300px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+    #slideshow {
+        height: 120px;
+        line-height: 120px;
+        width: 70%;
+    }
+    #slideshow p{
+    font-size:20px;
+    width:300px;
+    margin-bottom:-30px;
+}
+    .circle {
+	width: 15px;
+	height: 15px; 
+}
+    #bullets{
+    width:105px;
+}
+#C0{
+    margin-right:30px;
+}
+#C1{
+    margin-right:30px;
+}
+}
+
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 701px) and (max-width: 950px) and (orientation:landscape) {
+
+/********************************-CONTENTS-***************************************/
+
+    #contents {
+        padding-top:200px;
+        padding-bottom: 200px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;        
+        /*height:495px;*/
+    }
+    #slideshow {
+        height: 120px;
+        line-height: 120px;
+        width: 70%;
+    }
+    #slideshow p{
+    font-size:27px;
+    width:400px;
+    margin-bottom:-30px;
+}
+    .circle {
+	width: 15px;
+	height: 15px; 
+}
+    #bullets{
+    width:105px;
+}
+#C0{
+    margin-right:30px;
+}
+#C1{
+    margin-right:30px;
+}
+}
+/*********************************************************************************
+************************************-MEDIA3-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 451px) and (max-width: 700px) and (orientation:landscape) {
+
+/********************************-CONTENTS-***************************************/
+
+    #contents {
+        padding-top:200px;
+        padding-bottom: 200px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;                
+        /*height:495px;*/
+    }
+    #slideshow {
+        height: 120px;
+        line-height: 120px;
+        width: 70%;
+    }
+    #slideshow p{
+    font-size:20px;
+    width:300px;
+    margin-bottom:-30px;
+}
+    .circle {
+	width: 15px;
+	height: 15px; 
+}
+    #bullets{
+    width:105px;
+}
+#C0{
+    margin-right:30px;
+}
+#C1{
+    margin-right:30px;
+}
+}
+
+
+/*********************************************************************************
+************************************-MEDIA4-**************************************
+**********************************************************************************/
+
+@media screen and (max-width: 450px) {
+
+/********************************-CONTENTS-***************************************/
+
+
+    #contents {
+        padding-top:200px;
+        padding-bottom: 100px;
+        /*padding-bottom: 1150px;*/ /* must be same height as the footer */ 
+        /*background-color:red;*/       
+        height:auto;
+    }
+    #slideshow {
+        height: 100px;
+        line-height: 100px;
+        /*width: 220px;*/
+        width:70%;
+    }
+    #slideshow p{
+    font-size:15px;
+    width:220px;
+    margin-bottom:-25px;
+}
+    .circle {
+	width: 15px;
+	height: 15px; 
+}
+    #bullets{
+    width:100px;
+}
+#C0{
+    margin-right:25px;
+}
+#C1{
+    margin-right:25px;
+}
+}
+
+/*********************************************************************************
+************************************-START-***************************************
+**********************************************************************************/
+
+#slideshowWrapper{
+    
+}
+
+#slideshow{
+    color: #ffffff;
+    background-color: rgba(28,62,149,0.8);
+    margin-left:auto;
+    margin-right:auto;    
+    vertical-align:middle;
+}
+#slideshow p{
+    text-align:center;
+    /*background-color:red;*/
+    margin-left:auto;
+    margin-right:auto;  
+}
+
+.circle {
+    background-color:#ffffff;
+	border-radius: 50%; 
+}
+.circle:hover{
+    background-color:#7f7f7f!important;
+}
+#bullets{
+    margin-left:auto;
+    margin-right:auto;
+}
+#C0{
+    float:left;
+}
+#C1{
+    float:left;
+}
+#C2{
+    float:left;
+}

@@ -2,117 +2,18 @@
     <div class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter blurred">
         <div id="spaceHeader">
         </div>
-
-        <!--Put anything relevant below this line-->
-
-        <article class="firstArticle">
-            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">Front End JavaScript Web Developer</span></p>
-            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L"><a href="http://www.globility.co.uk/" target="_blank" title="Globility Limited">Globility Limited</a></span></p>
-            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">January 2016</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">Present</span>
+        <article *ngFor="let item of items; let i = index;">
+            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">{{item.role}}</span></p>
+            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L"><a href={{item.href}} target="_blank" title={{item.comPro}}>{{item.comPro}}</a></span></p>
+            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">{{item.initialTime}}</span><span class="font-Roboto-L"> - </span>
+                <span class="font-Roboto-L">{{item.finalTime}}</span>
             </p>
-            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">22.5k£/year</span></p>
-            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">London</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">UK</span>
+            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">{{item.amount}}</span></p>
+            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">{{item.city}}</span><span class="font-Roboto-L"> - </span>
+                <span class="font-Roboto-L">{{item.country}}</span>
             </p>
-            <p class="font-Roboto-L">
-                I'm developing different fully responsive web apps in React (JSX syntax) using Flux as architecture, Material-UI as front-end framework, Radium as CSS-to-JS styling library and React-Router + Express (login handled by sessions) as routing solution. The
-                applications collect data from separate APIs using both the REST architecture (with JQuery-Ajax) and the WebSocket protocol (with Socket.io) by using asynchronous programming techniques (JavaScript Promises). I'm also developing a web
-                portal web in Angular2+TypeScript using "Observables" as a way to let Angular2 services push states to the other internal components. I'm using the ElementRef and Renderer service to directly change the DOM. The UI is made of not orthogonal
-                shapes and fully resizes according to the viewport by means of layered canvases controlled by Angular2 directives. The app sends emails after submitting a form through EmailJS and the native Http Angular service. The submit check is handled
-                by the new Google NoCaptcha Recaptcha. The Apps are being developed in a Node + Webpack environment. I've been also developing the front end side of fully responsive web applications using AngularJS 1, JavaScript, JQuery, Bootstrap3, Highcharts,
-                HTML5 and CSS3. The apps run within a Sails.js, Node.js and MongoDB stack. Particularly I've been using JavaScript (up to ES6) and JQuery to develop software logic, create and modify JSON objects as well as to handle Ajax techniques. I've
-                used Robomongo too, through its command line, to create, delete and modify JSON documents stored in MongoDB databases. Part of the day by day activity requires also keeping contacts with different clients, drawing flowcharts related to
-                the code structure and to the user story in Omnigraffle, preparing visual mockups in Photoshop and Illustrator, collaborating on the code with Git (in Bitbucket), organising the workflow with Jira, writing documentation with Confluence
-                and mentoring junior developers.
-            </p>
+            <p class="font-Roboto-L">{{item.description}}</p>
         </article>
-
-
-
-        <article class="internalArticle">
-            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">Front End Web Developer</span></p>
-            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L"><a href="http://wearedauntless.com/" target="_blank" title="Dauntless Agency">Dauntless Agency</a></span></p>
-            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">August 2015</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">November 2015</span>
-            </p>
-            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">20k£/year</span></p>
-            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">London</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">UK</span>
-            </p>
-            <p class="font-Roboto-L">
-                I developed fully responsive web pages using technologies such as HTML5, CSS3, Javascript, JQuery and Bootstrap. Part of the work activity comprised software testing and debugging with Chrome dev tools as well as the insertion and modification of content
-                and source code of dynamic websites (Wordpress + PHP).
-            </p>
-        </article>
-        <article class="internalArticle">
-            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">Freelance Front End Web Developer</span></p>
-            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L">Imaginaria.london</span></p>
-            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">June 2015</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">August 2015</span>
-            </p>
-            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">0£/Personal project</span></p>
-            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">London</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">UK</span>
-            </p>
-            <p class="font-Roboto-L">
-                My personal website that I designed and coded from the ground. I bought on GoDaddy the domain named imaginaria with the extensions .london, .co.uk and .uk. I hosted it on Hostgator and I dealt with the related tools in the Control Panel. I designed my
-                logo with Illustrator and I shot a promotional video of myself that I edited in Premiere and included in the website. Imaginaria 1.0 was a static non responsive website coded in HTML5 and CSS3.A complete overhauling of my website with
-                a fully responsive one-page sliding-show design. I used HTML, CSS, JavaScript and JQuery and particularly the latter for the handling of animations related to the UI. I used GSAP JS by GreenSock too to have smoother animations and less
-                verbose code. I used Velocity.js for the handling of SVG pictures (opacity transitions), TouchSwipe JS and MouseWheel JS for the controls. Regarding the graphic, I collaborated with a designer who provided the visuals and mock-ups that
-                I turned into code. My efforts aimed to use only JavaScript technologies for my project. The website is currently hosted in Azure.
-            </p>
-        </article>
-        <article class="internalArticle">
-            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">Freelance Front End Web Developer</span></p>
-            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L"><a href="../RuiWebsite/index.html" target="_blank" title="Rui Yun Jiang - Designer">Rui Yun Jiang - Designer</a></span></p>
-            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">January 2015</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">April 2015</span>
-            </p>
-            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">1000£</span></p>
-            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">London</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">UK</span>
-            </p>
-            <p class="font-Roboto-L">
-                A web portfolio for a London based designer. The client provided mock-ups that I translated in code. Initially I used Bootstrap for the scaffolding and HTML and CSS for the structure and the style. Once I had a responsive static website I wrapped it in
-                Wordpress making it dynamic using PHP and the standard CMS functions. I created PHP functions too for complex handling of text and for the contact handling via POST method. The result is a responsive tailored from the ground template which
-                is fully integrated in Wordpress.
-            </p>
-        </article>
-        <article class="internalArticle">
-            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">Freelance Front End Web Developer</span></p>
-            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L"><a href="../MbI/index.html" target="_blank" title="Made by Italians">Made by Italians</a></span></p>
-            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">September 2014</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">December 2014</span>
-            </p>
-            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">600£</span></p>
-            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">London</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">UK</span>
-            </p>
-            <p class="font-Roboto-L">
-                A website for an Italian start-up in the field of business promotion. It’s the result of a collaboration with a designer who dealt with the artistic side of the project and provided me with mock-ups that I translated in web pages. My role involved the
-                creation and design of the logo with Photoshop and Illustrator, the relationship management with the client and the operations needed for hosting (on One.com). The website is fully responsive and coded with HTML, CSS and Javascript. The
-                use of Javascript involved the creation of functions handling the browser selection and an interactive slideshow.
-            </p>
-        </article>
-        <article>
-            <p><span class="font-Roboto-B">Role: </span><span class="font-Roboto-L">Freelance Front End Web Developer</span></p>
-            <p><span class="font-Roboto-B">Company/Project: </span><span class="font-Roboto-L">Imaginaria.london</span></p>
-            <p><span class="font-Roboto-B">Time: </span><span class="font-Roboto-L">March 2014</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">August 2014</span>
-            </p>
-            <p><span class="font-Roboto-B">Amount/Wage: </span><span class="font-Roboto-L">0£/Personal project</span></p>
-            <p><span class="font-Roboto-B">Location: </span><span class="font-Roboto-L">London</span><span class="font-Roboto-L"> - </span>
-                <span class="font-Roboto-L">UK</span>
-            </p>
-            <p class="font-Roboto-L">
-                My personal website that I designed and coded from the ground. I bought on GoDaddy the domain named imaginaria with the extensions .london, .co.uk and .uk. I hosted it on Hostgator and I dealt with the related tools in the Control Panel. I designed my
-                logo with Illustrator and I shot a promotional video of myself that I edited in Premiere and included in the website. Imaginaria 1.0 was a static non responsive website coded in HTML5 and CSS3.
-            </p>
-        </article>
-
-        <!--Put anything relevant above this line-->
-
         <div id="spaceFooter">
         </div>
     </div>

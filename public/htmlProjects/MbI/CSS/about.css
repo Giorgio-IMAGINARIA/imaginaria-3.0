@@ -1,0 +1,254 @@
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 951px) {
+
+
+/********************************-CONTENTS-***************************************/
+
+#contents {
+        padding-top:300px;
+        padding-bottom: 230px;
+        /*padding-bottom: 385px;*/ /* must be same height as the footer */
+        height:auto;
+    }
+
+#aboutDescription {
+        max-width: 690px;
+        padding: 80px;
+        
+    }
+
+article {
+    }
+
+    #aboutMainHeadline {
+        font-size: 2em;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        width:9.1em;
+        margin-left:auto;
+        margin-right:auto;
+    } 
+      
+    
+/****************************-LEFT-DECORATION-************************************/
+ #aboutMainHeadline::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            right: 100%;
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+        #aboutMainHeadline::after {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            left: 100%;
+        }     
+}
+
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media (min-width: 451px) and (max-width: 950px) and (orientation:portrait) {
+
+
+/********************************-CONTENTS-***************************************/
+
+#contents {
+        padding-top:430px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+#aboutDescription {
+        max-width: 80%;
+        padding: 20px;
+    }
+    #aboutMainHeadline {
+        font-size: 2em;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        width:9.1em;
+        margin-left:auto;
+        margin-right:auto;
+    } 
+      
+    
+/****************************-LEFT-DECORATION-************************************/
+ #aboutMainHeadline::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            right: 100%;
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+        #aboutMainHeadline::after {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            left: 100%;
+        }     
+}
+
+
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media (min-width: 451px) and (max-width: 950px) and (orientation:landscape) {
+
+
+/********************************-CONTENTS-***************************************/
+
+#contents {
+        padding-top:160px;
+        padding-bottom: 80px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+#aboutDescription {
+        max-width: 90%;
+        padding: 20px;
+    }
+    #aboutMainHeadline {
+        font-size: 2em;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        width:9.1em;
+        margin-left:auto;
+        margin-right:auto;
+    } 
+      
+    
+/****************************-LEFT-DECORATION-************************************/
+ #aboutMainHeadline::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            right: 100%;
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+        #aboutMainHeadline::after {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            left: 100%;
+        }     
+}
+
+/*********************************************************************************
+************************************-MEDIA3-**************************************
+**********************************************************************************/
+
+@media (max-width: 450px) {
+
+/********************************-CONTENTS-***************************************/
+
+#contents {
+        padding-top:200px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+    #aboutDescription {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    #aboutMainHeadline {
+        font-size: 1.5em;
+        line-height: 30px;
+        text-align: left;
+        position: relative;
+        padding-right: 5px;
+        width:9.1em;
+    }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #aboutMainHeadline::after {
+        content: "";
+        position: absolute;
+        line-height: 0px;
+        border-bottom: 1px solid #666666;
+        top: 50%;
+        width: 600px;
+        left: 100%;
+    }
+}
+
+/*********************************************************************************
+************************************-START-***************************************
+**********************************************************************************/
+#aboutDescription{
+    background-color: rgba(255,255,255,0.8);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Economica', sans-serif;
+    
+}
+#aboutMainHeadline {
+    color: #1c3e95;
+}
+
+/********************************-MAIN CONTENT-***********************************/
+article{
+    overflow:hidden;
+}
+#aboutContent {
+    text-align: justify;
+    text-justify:auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#aboutEmail{
+    text-decoration: none;
+	color: #1c3e95;
+}
+#aboutEmail:hover{
+    text-decoration: none;
+	color:#4475f2;
+}

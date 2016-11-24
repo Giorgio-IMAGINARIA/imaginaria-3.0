@@ -159,6 +159,12 @@ html a {
     display: flex;
     flex-wrap: wrap;
 }
+.flexContainerColumnSpaceBetween{
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
 .flexChildrenInColumnAlignRight{
     -webkit-align-self: flex-end;
     align-self: flex-end;

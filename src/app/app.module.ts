@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -21,12 +23,15 @@ import { GSAPRotateDirective } from './directives/GSAPRotate.directive';
 
 import { BlurService } from './services/blur.service';
 import { HandleProjectsService } from './services/handleProjects.service';
+import { MessagesService } from './services/messages.service';
+import { DbWorksService } from './services/db.works.service';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    HttpModule
   ],
   declarations: [
     WindmillBlackComponent,
@@ -44,7 +49,7 @@ import { HandleProjectsService } from './services/handleProjects.service';
     GSAPRotateDirective
   ],
   providers: [
-    BlurService, HandleProjectsService
+    BlurService, HandleProjectsService, MessagesService, DbWorksService
   ],
   bootstrap: [AppComponent]
 })

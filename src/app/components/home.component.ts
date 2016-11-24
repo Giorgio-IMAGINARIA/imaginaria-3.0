@@ -52,6 +52,11 @@ export class HomeComponent implements OnInit {
         this.checkBlurService();
         this.activateSwipeListener();
         this.initialiseProjects();
+        if (this.blurService.currentBlurState) {
+            this.blurStateString = 'active';
+            this.blurred = true;
+            $('body').css('overflow', 'hidden');
+        }
     }
 
     @HostListener('window:keydown', ['$event']) keyboardInput(event: any) {
@@ -87,7 +92,17 @@ export class HomeComponent implements OnInit {
 
     private checkBlurService(): void {
         this.blurService.activeBlurStateObservable.subscribe(
-            response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
+            response => {
+                if (response) {
+                    this.blurStateString = 'active';
+                    this.blurred = true;
+                    $('body').css('overflow', 'hidden');
+                } else {
+                    this.blurStateString = 'inactive';
+                    this.blurred = false;
+                    $('body').css('overflow', 'initial');
+                }
+            },
             error => console.log('Error! Description: ' + error)
         );
     }

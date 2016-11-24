@@ -1,0 +1,1018 @@
+/*********************************************************************************
+*******************************-AN EXCEPTIONS-************************************
+**********************************************************************************/
+@media only screen and (-webkit-device-pixel-ratio:.75){
+    /* Put CSS for low density (ldpi) Android layouts in here */
+}
+
+@media only screen and (-webkit-device-pixel-ratio:1){
+    /* Put CSS for medium density (mdpi) Android layouts in here */
+}
+
+@media only screen and (-webkit-device-pixel-ratio:1.5){
+    /* Put CSS for high density (hdpi) Android layouts in here */
+}
+/*********************************************************************************
+*******************************-IE EXCEPTIONS-************************************
+**********************************************************************************/
+
+@media all and (min-width: 951px) and (min-width:0\0) { 
+      .businessHeadline {
+    }
+       .businessName::before, .businessName::after {
+            top: 60%;
+        }
+}
+
+@media all and (min-width: 701px) and (max-width: 950px) and (min-width:0\0) {
+    .businessHeadline {
+    }
+       
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            top: 75%;
+            right: 240px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        top: 75%;
+        left: 185px;
+    }  
+    
+      .businessName::before, .businessName::after {
+            top: 55%;
+        }       
+}
+
+@media all and (min-width: 451px) and (max-width: 700px) and (min-width:0\0) {
+    .businessHeadline {
+    }
+       .businessName::before, .businessName::after {
+            top: 50%;
+        }
+}
+
+@media all and (max-width: 450px) and (min-width:0\0) {
+    .businessHeadline {
+       /* background-color: magenta;*/
+    }
+
+    .businessName::before, .businessName::after {
+        top: 53%;
+    }
+}
+/*********************************************************************************
+*******************************-FF EXCEPTIONS-************************************
+**********************************************************************************/
+@media all and (min-width: 951px) and (-moz-images-in-menus:0) {
+    .businessHeadline {
+        /*background-color: brown;*/
+    }
+    .businessName::before, .businessName::after {
+        top: 40%;
+    }
+}
+@media all and (min-width: 701px) and (max-width: 950px) and (-moz-images-in-menus:0) {
+    .businessHeadline {
+        /*background-color:red;*/
+    }
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            top: 210%;
+            right: 190px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        top: 210%;
+        left: 185px;
+    }  
+
+       .businessName::before, .businessName::after {
+            top:38%;
+        }
+}
+
+@media all and (min-width: 451px) and (max-width: 700px) and (-moz-images-in-menus:0) {
+    .businessHeadline {
+        /*background-color:blue;*/
+    }
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            top: 210%;
+            right: 190px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        top: 210%;
+        left: 185px;
+    }  
+       .businessName::before, .businessName::after {
+            top:40%;
+        }
+}
+
+@media all and (max-width: 450px) and (-moz-images-in-menus:0) {
+    .businessHeadline {
+       /* background-color: magenta;*/
+    }
+    .businessName::before, .businessName::after {
+        top:35%;
+    }
+}
+
+/*********************************************************************************
+*******************************-SA&CH EXCEPTIONS-*********************************
+**********************************************************************************/
+@media all and (min-width: 951px) and (-webkit-min-device-pixel-ratio:0) {
+    .businessHeadline {
+        /*background-color: brown;*/
+    }
+    .businessName::before, .businessName::after {
+        top: 40%;
+    }
+}
+@media all and (min-width: 701px) and (max-width: 950px) and (-webkit-min-device-pixel-ratio:0) {
+    .businessHeadline {
+        /*background-color:red;*/
+    }
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            top: 75%;
+            right: 240px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        top: 75%;
+        left: 185px;
+    }  
+
+       .businessName::before, .businessName::after {
+            top:38%;
+        }
+}
+
+@media all and (min-width: 451px) and (max-width: 700px) and (-webkit-min-device-pixel-ratio:0) {
+    .businessHeadline {
+        /*background-color:blue;*/
+    }
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            top: 75%;
+            right: 240px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        top: 75%;
+        left: 185px;
+    }  
+
+       .businessName::before, .businessName::after {
+            top:40%;
+        }
+}
+
+@media all and (max-width: 450px) and (-webkit-min-device-pixel-ratio:0) {
+    .businessHeadline {
+       /* background-color: magenta;*/
+    }
+
+    .businessName::before, .businessName::after {
+        top:35%;
+    }
+}
+
+/*********************************************************************************
+************************************-MEDIA1-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 951px) {
+
+    #contents {
+        padding-top:300px;
+        padding-bottom: 300px;
+        /*padding-bottom: 385px;*/ /* must be same height as the footer */
+        height:auto;
+    }
+
+    #placesDescription {
+        max-width: 720px;
+        padding: 60px;
+    }
+
+    article {
+        /*margin-top: -50px;*/
+    }
+
+/*********************************-HEADLINE-**************************************/
+
+    #placesMainHeadline {
+        font-size: 2em;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    #firstSpace {
+        font-size: 0em;
+    }
+
+    #placesMainHeadlineBlue br {
+        display: none;
+    }
+
+    /****************************-LEFT-DECORATION-************************************/
+    #first {
+        position: relative;
+        padding-left: 20px;
+    }
+
+        #first::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            right: 100%;
+        }
+
+    /****************************-RIGHT-DECORATION-************************************/
+
+    #second {
+        position: relative;
+        padding-right: 20px;
+    }
+
+        #second::after {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            top: 50%;
+            width: 600px;
+            left: 100%;
+        }
+
+    /********************************-MAIN CONTENT-***********************************/
+    #placesActivities {
+        display: table;
+    }
+
+    .businessLine {
+        display: table-row;
+    }
+
+    .businessThumbnailWrap {
+        width: 50%;
+        display: table-cell;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .businessThumbnail {
+        outline: 10px solid #1c3e95;
+    }
+
+    .businessDescriptionWrap {
+        width: 50%;
+        display: table-cell;
+    }
+
+    .businessHeadline {
+        width: 24em;
+        line-height: 2.5em;
+       /* background-color:brown;*/
+    }   
+
+    .businessName {
+        font-size: 2em;
+        /*background-color:white;*/
+    }
+    .businessName::before, .businessName::after {
+            font-size: 200%;
+        }
+    .businessList {
+        width: 23.1em;
+    }
+    .businessList ul {
+                padding-left: 10px;
+            }
+        .businessList ul li {
+            line-height: 1.5em;
+        }
+
+      .businessList ul li:before {
+                font-size: 200%;
+                top: 40%;
+                padding-right:5px;
+            }        
+
+    .businessBold, .businessArgument {
+        font-size: 1em;
+    }
+}
+
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 701px) and (max-width: 950px) and (orientation:portrait) {
+
+#contents {
+        padding-top:220px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+#placesDescription{
+    max-width:82%;
+    padding: 30px;
+    
+}
+
+/*********************************-HEADLINE-**************************************/
+
+#placesMainHeadline {
+        text-align: center;
+}   
+#placesMainHeadlineBlue br{
+    /*display:none;*/
+}
+#firstSpace{
+    display:none;
+}
+
+#firstSecond {
+        position: relative;
+    }
+#first{
+    font-size: 1em;
+    line-height: 1em;
+}
+#second{
+    font-size: 2.1em;
+    line-height: 1.1em;
+}
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            width: 1000px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        content: "";
+        position: absolute;
+        line-height: 0px;
+        border-bottom: 1.5px solid #666666;
+        width: 1000px;
+    }           
+
+/********************************-MAIN CONTENT-***********************************/
+#placesActivities {
+        display: table;
+    }
+    .businessLine {
+        display: table-row;
+    }
+    .businessThumbnailWrap {
+        width:50%;
+        display: table-cell;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .businessThumbnail {
+        outline: 8px solid #1c3e95;
+    }
+    .businessDescriptionWrap {
+        width:50%;
+        display: table-cell;        
+    }
+    .businessHeadline {
+        width: 18em;
+        line-height: 2em;
+        /*background-color: red;*/
+    }
+    
+    .businessName {
+        font-size: 1.5em;
+    }
+    .businessName::before, .businessName::after {
+            font-size: 200%;
+        }
+.businessList {
+        width: 19em;
+    }
+.businessList ul {
+                padding-left: 10px;
+            }
+            .businessList ul li {
+                line-height: 1.5em;
+            }
+            .businessList ul li:before {
+                font-size: 150%;
+                top: 43%;
+                padding-right:5px;
+            }    
+.businessBold, .businessArgument{
+    font-size:0.9em;
+}
+}
+
+/*********************************************************************************
+************************************-MEDIA3-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 451px) and (max-width: 700px) and (orientation:portrait) {
+
+    #contents {
+        padding-top:200px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+    #placesDescription {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+/*********************************-HEADLINE-**************************************/
+
+    #placesMainHeadline {
+        font-size: 1em;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    #placesMainHeadlineBlue br {
+        /*display: none;*/
+    }
+
+   #firstSpace{
+    display:none;
+}
+
+#firstSecond {
+        position: relative;
+    }
+#first{
+    font-size: 1em;
+    line-height: 1em;
+}
+#second{
+    font-size: 2.1em;
+    line-height: 1.1em;
+}
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            width: 1000px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        content: "";
+        position: absolute;
+        line-height: 0px;
+        border-bottom: 1.5px solid #666666;
+        width: 1000px;
+    }           
+
+    /********************************-MAIN CONTENT-***********************************/
+    #placesActivities {
+        display: table;
+    }
+
+    .businessLine {
+        display: table-row;
+    }
+
+    .businessThumbnailWrap {
+        width: 50%;
+        display: table-cell;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .businessThumbnail {
+        outline: 6px solid #1c3e95;
+    }
+
+    .businessDescriptionWrap {
+        width: 50%;
+        display: table-cell;        
+    }
+
+    .businessHeadline {
+        width: 13em;
+        line-height:1.2em;
+        /*background-color: red;*/
+    }
+
+    .businessName {
+        font-size: 1.2em;
+    }
+    .businessName::before, .businessName::after {
+            font-size: 170%;
+        }
+    .businessList {
+        width: 13em;
+    }
+    .businessList ul {
+                padding-left: 10px;
+            }
+            .businessList ul li {
+                line-height: 0.6em;
+            }
+            .businessList ul li:before {
+                font-size: 100%;
+                top: 50%;
+                padding-right:5px;
+            }      
+.businessBold, .businessArgument{
+    font-size:0.6em;
+}
+}
+
+/*********************************************************************************
+************************************-MEDIA2-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 701px) and (max-width: 950px) and (orientation:landscape) {
+
+#contents {
+        padding-top:120px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+#placesDescription{
+    max-width:90%;
+    padding: 30px;
+    
+}
+
+/*********************************-HEADLINE-**************************************/
+
+#placesMainHeadline {
+        text-align: center;
+}   
+#placesMainHeadlineBlue br{
+    /*display:none;*/
+}
+#firstSpace{
+    display:none;
+}
+
+#firstSecond {
+        position: relative;
+    }
+#first{
+    font-size: 1em;
+    line-height: 1em;
+}
+#second{
+    font-size: 2.1em;
+    line-height: 1.1em;
+}
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            width: 1000px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        content: "";
+        position: absolute;
+        line-height: 0px;
+        border-bottom: 1.5px solid #666666;
+        width: 1000px;
+    }           
+
+/********************************-MAIN CONTENT-***********************************/
+#placesActivities {
+        display: table;
+    }
+    .businessLine {
+        display: table-row;
+    }
+    .businessThumbnailWrap {
+        width:50%;
+        display: table-cell;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .businessThumbnail {
+        outline: 8px solid #1c3e95;
+    }
+    .businessDescriptionWrap {
+        width:50%;
+        display: table-cell;        
+    }
+    .businessHeadline {
+        width: 18em;
+        line-height: 2em;
+        /*background-color: red;*/
+    }
+    
+    .businessName {
+        font-size: 1.5em;
+    }
+    .businessName::before, .businessName::after {
+            font-size: 200%;
+        }
+.businessList {
+        width: 19em;
+    }
+.businessList ul {
+                padding-left: 10px;
+            }
+            .businessList ul li {
+                line-height: 1.5em;
+            }
+            .businessList ul li:before {
+                font-size: 150%;
+                top: 43%;
+                padding-right:5px;
+            }    
+.businessBold, .businessArgument{
+    font-size:0.9em;
+}
+}
+
+/*********************************************************************************
+************************************-MEDIA3-**************************************
+**********************************************************************************/
+
+@media screen and (min-width: 451px) and (max-width: 700px) and (orientation:landscape) {
+
+    #contents {
+        padding-top:120px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+    #placesDescription {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+/*********************************-HEADLINE-**************************************/
+
+    #placesMainHeadline {
+        font-size: 1em;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    #placesMainHeadlineBlue br {
+        /*display: none;*/
+    }
+
+   #firstSpace{
+    display:none;
+}
+
+#firstSecond {
+        position: relative;
+    }
+#first{
+    font-size: 1em;
+    line-height: 1em;
+}
+#second{
+    font-size: 2.1em;
+    line-height: 1.1em;
+}
+/****************************-LEFT-DECORATION-************************************/
+    
+        #firstSecond::before {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1.5px solid #666666;
+            width: 1000px;            
+        }
+
+/****************************-RIGHT-DECORATION-************************************/
+
+    #firstSecond::after {
+        content: "";
+        position: absolute;
+        line-height: 0px;
+        border-bottom: 1.5px solid #666666;
+        width: 1000px;
+    }           
+
+    /********************************-MAIN CONTENT-***********************************/
+    #placesActivities {
+        display: table;
+    }
+
+    .businessLine {
+        display: table-row;
+    }
+
+    .businessThumbnailWrap {
+        width: 50%;
+        display: table-cell;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .businessThumbnail {
+        outline: 6px solid #1c3e95;
+    }
+
+    .businessDescriptionWrap {
+        width: 50%;
+        display: table-cell;        
+    }
+
+    .businessHeadline {
+        width: 13em;
+        line-height:1.2em;
+        /*background-color: red;*/
+    }
+
+    .businessName {
+        font-size: 1.2em;
+    }
+    .businessName::before, .businessName::after {
+            font-size: 170%;
+        }
+    .businessList {
+        width: 13em;
+    }
+    .businessList ul {
+                padding-left: 10px;
+            }
+            .businessList ul li {
+                line-height: 0.6em;
+            }
+            .businessList ul li:before {
+                font-size: 100%;
+                top: 50%;
+                padding-right:5px;
+            }      
+.businessBold, .businessArgument{
+    font-size:0.6em;
+}
+}
+
+
+/*********************************************************************************
+************************************-MEDIA4-**************************************
+**********************************************************************************/
+
+@media screen and (max-width: 450px) {
+
+    #contents {
+        padding-top:150px;
+        padding-bottom: 100px;
+        /*padding-bottom: 500px;*/ /* must be same height as the footer */
+        height:auto;
+        /*height:495px;*/
+    }
+
+    #placesDescription {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+/*********************************-HEADLINE-**************************************/
+
+    #first {
+        font-size: 1em;
+        line-height: 15px;
+    }
+
+    #second {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+
+    /****************************-RIGHT-DECORATION-************************************/
+
+    #first {
+        position: relative;
+        padding-right: 5px;
+    }
+
+        #first::after {
+            content: "";
+            position: absolute;
+            line-height: 0px;
+            border-bottom: 1px solid #666666;
+            top: 50%;
+            width: 600px;
+            left: 100%;
+        }
+
+
+    /********************************-MAIN CONTENT-***********************************/
+
+    .businessThumbnailWrap {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        float: left;
+    }
+
+    .businessThumbnail {
+        outline: 5px solid #1c3e95;
+    }
+
+    .businessDescriptionWrap {
+        padding-bottom: 50px;
+    }
+
+    .businessHeadline {
+        width: 18em;
+        line-height: 2em;
+    }
+    
+    .businessName {
+        font-size: 1.5em;
+    }
+
+        .businessName::before, .businessName::after {
+            font-size: 200%;
+        }
+
+    .businessList {
+        width: 21em;
+    }
+
+        .businessList ul {
+            padding-left: 14px;
+        }
+
+            .businessList ul li {
+                line-height: 1.5em;
+            }
+
+                .businessList ul li:before {
+                    font-size: 140%;
+                    top: 44%;
+                    padding-right: 5px;
+                }
+
+    .businessBold, .businessArgument {
+        font-size: 1em;
+    }
+}
+
+/*********************************************************************************
+************************************-START-***************************************
+**********************************************************************************/
+
+/*********************************-HEADLINE-**************************************/
+
+#placesDescription{
+    background-color: rgba(255,255,255,0.8);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Economica', sans-serif;
+}
+
+article{
+    overflow:hidden;
+}
+
+#placesMainHeadlineBlue {
+    color: #1c3e95;
+}
+/********************************-MAIN CONTENT-***********************************/
+#placesActivities {    
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /*background-color:aqua;*/
+    width:100%;
+}
+.businessLine{
+    clear:both;
+    height:auto;
+    /*background-color:red;*/ 
+    margin-left:auto;
+    margin-right:auto;      
+}
+.businessThumbnailWrap{    
+    /*background-color:green;*/
+    vertical-align:middle;
+}
+.businessThumbnail {    
+    display:block;
+    border: 1px solid white;    
+    outline-offset: 1px;
+    width:90%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+.businessDescriptionWrap{
+    /*background-color:yellow;*/
+    vertical-align:middle;
+}
+.businessDescription {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*background-color: grey;*/
+}
+.businessHeadline{
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom: 1px solid #666666;
+    /*background-color:magenta;*/
+}
+.businessList {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .businessList ul {
+        width: 100%;
+        text-align: left;
+    }
+.businessList ul li{
+    width: 100%;
+    list-style-type: none;
+    position:relative;
+}
+
+.businessList ul li::before {
+                content: "\2022";
+                color: #1c3e95;
+                position: absolute;
+                line-height: 0px;                
+                right: 100%;
+            }
+
+
+.businessName{
+    font-family: 'Economica', sans-serif;
+    vertical-align:middle;
+    position:relative;
+}
+.businessName::before{
+    content: "\2022""\00A0""\2022""\00A0""\2022""\00A0";
+                color: #1c3e95;
+                position: absolute;
+                line-height: 0px;                
+                right: 100%;
+                padding:0px;
+                margin:0px;
+}
+.businessName::after{
+    content: "\00A0""\2022""\00A0""\2022""\00A0""\2022";
+                color: #1c3e95;
+                position: absolute;
+                line-height: 0px;                
+                left: 100%;
+}
+.businessBold{
+    font-weight: bold;
+}
+.businessArgument a{
+    text-decoration: none;
+    color: #1c3e95;
+}

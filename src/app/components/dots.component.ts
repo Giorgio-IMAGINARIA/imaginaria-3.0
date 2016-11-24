@@ -23,12 +23,14 @@ import { HandleProjectsService } from '../services/handleProjects.service';
 
 export class Dots implements OnInit {
 
-  private initialBlurState: boolean;
-  private blurStateString: string = 'inactive';
+  private blurStateString: string;
   constructor(private blurService: BlurService, private handleProjectsService: HandleProjectsService) { }
 
   ngOnInit(): void {
     this.checkBlurService();
+    if (this.blurService.currentBlurState) {
+      this.blurStateString = 'active';
+    }
   }
 
   private checkBlurService(): void {

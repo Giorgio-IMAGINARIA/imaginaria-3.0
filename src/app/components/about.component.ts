@@ -2,11 +2,13 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
 //Services
 import { BlurService } from '../services/blur.service';
 
+declare let $: any;
+
 @Component({
-  selector: 'my-about',
-  templateUrl: '../templates/about.component.html',
-  styleUrls: ['../styles/about.component.css'],
-  animations: [
+    selector: 'my-about',
+    templateUrl: '../templates/about.component.html',
+    styleUrls: ['../styles/about.component.css'],
+    animations: [
         trigger('toBlur', [
             state('inactive', style({
                 "-webkit-filter": 'blur(0px)',
@@ -21,21 +23,31 @@ import { BlurService } from '../services/blur.service';
         ])]
 
 })
+
 export class AboutComponent implements OnInit {
-     private blurStateString: string;
+    private blurStateString: string;
 
+    constructor(private blurService: BlurService) {}
 
-  constructor(private blurService: BlurService) {
-     this.blurStateString = 'inactive';
-  }
-
-   ngOnInit() {
+    ngOnInit() {
+        window.scrollTo(0, 0);
         this.checkBlurService();
-
+        if (this.blurService.currentBlurState) {
+            this.blurStateString = 'active';
+            $('body').css('overflow', 'hidden');
+        }
     }
     private checkBlurService(): void {
         this.blurService.activeBlurStateObservable.subscribe(
-            response => response ? this.blurStateString = 'active' : this.blurStateString = 'inactive',
+            response => {
+                if (response) {
+                    this.blurStateString = 'active';
+                    $('body').css('overflow', 'hidden');
+                } else {
+                    this.blurStateString = 'inactive';
+                    $('body').css('overflow', 'initial');
+                }
+            },
             error => console.log('Error! Description: ' + error)
         );
     }

@@ -1,0 +1,483 @@
+﻿/*********************************************************************************
+************************************-CSS RESET-***********************************
+**********************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************************************************************************
+*******************************-IE EXCEPTIONS-************************************
+**********************************************************************************/
+
+@media all and (min-width: 1145px) and (orientation:portrait) and (min-width:0\0) { 
+     nav ul {
+            width: 15.5em;
+        } 
+     #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (min-width: 451px) and (max-width:1144px) and (orientation:portrait) and (min-width:0\0) { 
+      nav ul {
+            width: 21.3em;            
+        }
+      #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (min-width: 1145px) and (orientation:landscape) and (min-width:0\0) {
+    nav ul {
+            width: 21.3em;
+        }
+    #copyright {
+        width: 11em;
+    }
+    }
+ 
+@media all (min-width: 451px) and (max-width:1144px) and (orientation:landscape) and (min-width:0\0) {
+    nav ul {
+            width: 21.3em;
+        }
+    #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (max-width: 450px) and (min-width:0\0) {
+    nav ul {
+            width: 15.7em;                     
+        }  
+     #copyright {
+        width: 11em;
+    }
+}
+/*********************************************************************************
+*******************************-FF EXCEPTIONS-************************************
+**********************************************************************************/
+@media all and (min-width: 1145px) and (orientation:portrait) and (-moz-images-in-menus:0) {
+    nav ul {
+            width: 15.5em;
+        }
+    #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (min-width: 451px) and (max-width:1144px) and (orientation:portrait) and (-moz-images-in-menus:0) {
+    nav ul {
+            width: 21.3em;            
+        }
+    #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (min-width: 1145px) and (orientation:landscape) and (-moz-images-in-menus:0) {
+    nav ul {
+            width: 21.3em;
+        }
+    #copyright {
+        width: 11em;
+    }
+}
+@media all and (min-width: 451px) and (max-width:1144px) and (orientation:landscape) and (-moz-images-in-menus:0) {
+  nav ul {
+            width: 21.7em;
+        }
+  nav ul li {
+                /*background-color:yellow;*/
+            }
+  #copyright {
+        width: 11.3em;
+    }
+    }
+
+@media all and (max-width: 450px) and (-moz-images-in-menus:0) {
+     nav ul {
+            /*width: 15.7em; */    
+                width: 15.9em;
+        }  
+     nav ul li {
+                /*background-color:red;*/
+            }
+     #copyright {
+        width: 11.3em;
+    }
+}
+
+/*********************************************************************************
+*******************************-SA&CH EXCEPTIONS-*********************************
+**********************************************************************************/
+@media all and (min-width: 1145px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:0) {
+    nav ul {
+            width: 15.5em;
+        }
+    #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (min-width: 451px) and (max-width:1144px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:0) {
+    nav ul {
+            width: 21.3em;            
+        }
+    #copyright {
+        width: 11em;
+    }
+}
+@media all and (min-width: 1145px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:0) {
+   nav ul {
+            width: 21.3em;
+        } 
+   #copyright {
+        width: 11em;
+    }
+}
+
+@media all and (min-width: 451px) and (max-width:1144px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:0) {
+  nav ul {
+            width: 21.9em;
+        }
+  #copyright {
+        width: 11em;
+    }
+  nav ul li {
+                /*background-color:red;*/
+            }
+}
+
+@media all and (max-width: 450px) and (-webkit-min-device-pixel-ratio:0) {  
+     nav ul {
+            width: 16em;         
+        }
+     #copyright {
+        width: 11em;
+    }
+     nav ul li {
+                /*background-color:lavender;*/
+            }
+}
+
+/*********************************************************************************
+************************************-MEDIA-3-PORTRAIT*****************************
+**********************************************************************************/
+
+@media (min-width: 1145px) and (orientation:portrait) {
+
+    video {
+        width: 996px;
+    }
+
+    img {
+        width: 67%;
+    }
+
+    nav {
+        height: 22px;
+        line-height: 22px;
+    }     
+            nav ul li {
+                height: 22px;
+            }
+                nav ul li p {
+                    height: 22px;
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    line-height: 22px;
+                }
+
+    #copyright {
+        height: 15px;
+        line-height: 15px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}/*End Media 2*/
+
+/*********************************************************************************
+************************************-MEDIA-2-PORTRAIT*****************************
+**********************************************************************************/
+
+@media (min-width: 451px) and (max-width:1144px) and (orientation:portrait) {
+
+    video {
+        width: 87%;
+    }
+
+    img {
+        width: 67%;
+    }
+
+    nav {
+        height: 22px;
+        line-height: 22px;
+    }        
+
+            nav ul li {
+                height: 22px;
+            }
+
+                nav ul li p {
+                    height: 22px;
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    line-height: 22px;
+                }
+
+    #copyright {
+        height: 15px;
+        line-height: 15px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}/*End Media 2*/
+
+/*********************************************************************************
+************************************-MEDIA-3-LANDSCAPE****************************
+**********************************************************************************/
+
+@media (min-width: 1145px) and (orientation:landscape) {
+
+    video {
+        width: 767px;
+    }
+
+    img {
+        width: 67%;
+    }
+
+    nav {
+        height: 22px;
+        line-height: 22px;
+    }       
+
+            nav ul li {
+                height: 22px;
+            }
+
+                nav ul li p {
+                    height: 22px;
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    line-height: 22px;
+                }
+
+    #copyright {
+        height: 15px;
+        line-height: 15px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}/*End Media 2*/
+
+/*********************************************************************************
+************************************-MEDIA-2-LANDSCAPE****************************
+**********************************************************************************/
+
+@media (min-width: 451px) and (max-width:1144px) and (orientation:landscape) {
+
+    video {
+        width: 67%;
+    }
+
+    img {
+        width: 67%;
+    }
+
+    nav {
+        height: 22px;
+        line-height: 22px;
+    }      
+            nav ul li {
+                height: 22px;
+            }
+
+                nav ul li p {
+                    height: 22px;
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    line-height: 22px;
+                }
+
+    #copyright {
+        height: 15px;
+        line-height: 15px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}/*End Media 2*/
+
+/*********************************************************************************
+************************************-MEDIA1-**************************************
+**********************************************************************************/
+
+@media (max-width: 450px) {
+
+    video {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    nav {
+        height: 15px;
+        line-height: 15px;
+    }     
+                nav ul li {
+                height: 15px;                
+            }
+                nav ul li p {
+                    height: 15px;
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                    line-height: 15px;
+                }
+
+    #copyright {
+        height: 12px;
+        line-height: 12px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}/*End Media 1*/
+
+/*********************************************************************************
+************************************-START-***************************************
+**********************************************************************************/
+
+html, body{height: 100%;}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/***************************VERTICALLY CENTER STYLE******************************/
+.column{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    /*text-align: center;*//*if the content has only text*/
+    height: 100%;
+    position: relative;
+}
+.vertical-align-wrap{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    display: table;
+}
+.vertical-align{
+    display: table-cell;
+}
+.vertical-align--middle{
+    vertical-align: middle;
+}
+
+/*********************************CONTENT STYLE***********************************/
+video {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;  
+}
+img{
+display: block;
+    margin-right: auto;
+    margin-left: auto; 
+}
+    nav ul {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px;       
+    }
+        nav ul li {
+            list-style-type: none;
+            float: left;                        
+        }
+        nav ul li p {
+                display: block;
+                color: #1c3e95;
+                text-align:center;
+            }
+            nav ul li p a {
+                text-decoration: none;
+                color: #1c3e95;
+            }
+                nav ul li p a:hover {
+                    text-decoration: none;
+                    color:#7f7f7f;
+                }
+                nav ul li p a:active {
+                    text-decoration: none;
+                    color:#7f7f7f;
+                }
+                nav ul li p a:focus {
+                    text-decoration: none;
+                    color:#7f7f7f;
+                }
+
+#copyright {
+    margin-right: auto;
+    margin-left: auto;
+    color: #1c3e95;
+    text-align: center;
+}
+
+#copyright a{
+    text-decoration: none;
+    color: #1c3e95;
+}
+#copyright a:hover{
+    text-decoration: none;
+    color:#7f7f7f;
+}
