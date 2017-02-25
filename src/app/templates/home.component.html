@@ -1,50 +1,65 @@
 <dots></dots>
-<div id="contentsReserve">
-    <div class="section" id="section0">
-        <div id="homeStrip" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter">
-            <a href="http://uk.linkedin.com/pub/giorgio-mazzei/35/b01/a26" target="_blank" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter">
-                <div id="homeTitle" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter font-Roboto-L"> imaginaria </div>
-                <div id="homeLine"> </div>
-                <div id="homeComment" class="font-Roboto-L">
-                    <p>My name is <span class="homeHighlighted">Giorgio Mazzei</span>.<br/> I'm a software developer based in London and this web application is a collection of my favourite works.</p>
+<main [@toBlur]="blurStateString">
+    <div *ngIf="projectSlideBefore" id="projectSlideBefore" class="section flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter" #projectSectionBefore>
+        <a href={{beforeProjectlink}} target="_blank">
+            <div id="pos0TitlePanel" class="projectTitlePanel flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
+                <div class="panelTitleWrap flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                    <p class="font-Roboto-L">{{beforeProjectDescription}}</p>
                 </div>
-            </a>
-        </div>
-    </div>
-    <div class="section flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter" id="section1">
-        <div id="ruiStrip" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
-            <a href="../../../public/htmlProjects/RuiWebsite/index.html" target="_blank">
-                <div id="ruiTitle" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter font-Roboto-L"> wordpress template development </div>
-                <div class="ruiSpace"> </div>
-                <div id="ruiLine"> </div>
-                <div class="ruiSpace"> </div>
-                <div id="ruiComment1" class="font-Lato-L flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
-                    <p><span class="ruiHighlighted">ruiyun</span><span>jiang</span></p>
-                </div>
-                <div class="ruiSpace"> </div>
-                <div id="ruiComment2" class="font-Lato-L flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter"> graphic design portfolio </div>
-            </a>
-        </div>
-    </div>
-    <div class="section flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter" id="section2">
-        <a href="../../../public/htmlProjects/MbI/index.html" target="_blank">
-            <div id="mbiStrip" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
-                <div id="mbiTitle" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter font-Roboto-L"> logo development and code development </div>
-                <div class="mbiSpace"> </div>
-                <div id="mbiLine"> </div>
-                <div class="mbiSpace"> </div>
-                <div id="mbiContainer" class="flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
-                    <div id="mbiLogo">
-                        <mbiLogo></mbiLogo>
-                    </div>
-                    <div id="mbiInternal" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
-                        <div id="mbiComment1" class="font-Economica-N flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter"> made by italians </div>
-                        <div id="mbiComment2" class="font-Economica-N flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter"> www.made-by-italians.com </div>
+                <div class="innerPanelSpace"> </div>
+                <div id="innerPanelLine0" class="innerPanelLine"> </div>
+                <div class="innerPanelSpace"> </div>
+                <div class="mainTitleContainer flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                    <div class="mainTitleInnerContainer flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
+                        <div class="titleWrap flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                            <p class="font-Economica-N">{{beforeProjectTitle}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-</div>
-<main [@toBlur]="blurStateString" class="blurred">
+    <div class="section flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter" #projectSection>
+        <a href={{currentProjectlink}} target="_blank">
+            <div id="pos0TitlePanel" class="projectTitlePanel flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
+                <div class="panelTitleWrap flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                    <p class="font-Roboto-L">{{currentProjectDescription}}</p>
+                </div>
+                <div class="innerPanelSpace"> </div>
+                <div id="innerPanelLine0" class="innerPanelLine"> </div>
+                <div class="innerPanelSpace"> </div>
+                <div class="mainTitleContainer flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                    <div class="mainTitleInnerContainer flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
+                        <div class="titleWrap flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                            <p class="font-Economica-N">{{currentProjectTitle}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <div *ngIf="projectSlideAfter" class="section flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter" #projectSectionAfter>
+        <a href={{afterProjectlink}} target="_blank">
+            <div id="pos0TitlePanel" class="projectTitlePanel flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
+                <div class="panelTitleWrap flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                    <p class="font-Roboto-L">{{afterProjectDescription}}</p>
+                </div>
+                <div class="innerPanelSpace"> </div>
+                <div id="innerPanelLine0" class="innerPanelLine"> </div>
+                <div class="innerPanelSpace"> </div>
+                <div class="mainTitleContainer flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                    <div class="mainTitleInnerContainer flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter">
+                        <div class="titleWrap flexContainer flexContainerRow flexContainerRowHAlignCenter flexContainerRowVAlignCenter">
+                            <p class="font-Economica-N">{{afterProjectTitle}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+
 </main>

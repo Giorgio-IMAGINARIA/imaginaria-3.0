@@ -26,6 +26,7 @@ declare let $: any;
 
 export class AboutComponent implements OnInit {
     private blurStateString: string;
+    private blurServiceListener:any;
 
     constructor(private blurService: BlurService) {}
 
@@ -37,8 +38,11 @@ export class AboutComponent implements OnInit {
             $('body').css('overflow', 'hidden');
         }
     }
+      ngOnDestroy(): void {
+        this.blurServiceListener.unsubscribe();
+    }
     private checkBlurService(): void {
-        this.blurService.activeBlurStateObservable.subscribe(
+        this.blurServiceListener = this.blurService.activeBlurStateObservable.subscribe(
             response => {
                 if (response) {
                     this.blurStateString = 'active';

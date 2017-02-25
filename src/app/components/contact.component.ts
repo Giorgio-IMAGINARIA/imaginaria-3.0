@@ -29,7 +29,8 @@ declare var google: any;
 })
 export class ContactComponent implements OnInit {
     private blurStateString: string;
-private model: any;
+    private blurServiceListener: any;
+    private model: any;
     constructor(private blurService: BlurService, private messagesService: MessagesService) { }
 
     ngOnInit() {
@@ -41,6 +42,9 @@ private model: any;
             this.blurStateString = 'active';
             $('body').css('overflow', 'hidden');
         }
+    }
+    ngOnDestroy(): void {
+        this.blurServiceListener.unsubscribe();
     }
     private initModel(): void {
         this.model = new ContactModel('', '', '', '');
@@ -286,12 +290,12 @@ private model: any;
         this.sendMessage();
     }
     private sendMessage() {
-        console.log('the model is: ',this.model)
+        console.log('the model is: ', this.model)
         this.messagesService.sendNew(this.model);
     }
 
     private checkBlurService(): void {
-        this.blurService.activeBlurStateObservable.subscribe(
+        this.blurServiceListener = this.blurService.activeBlurStateObservable.subscribe(
             response => {
                 if (response) {
                     this.blurStateString = 'active';

@@ -25,6 +25,8 @@ import { BlurService } from './services/blur.service';
 import { HandleProjectsService } from './services/handleProjects.service';
 import { MessagesService } from './services/messages.service';
 import { DbWorksService } from './services/db.works.service';
+import { DbProjChoiceService } from './services/db.projChoice.service';
+
 
 @NgModule({
   imports: [
@@ -49,7 +51,7 @@ import { DbWorksService } from './services/db.works.service';
     GSAPRotateDirective
   ],
   providers: [
-    BlurService, HandleProjectsService, MessagesService, DbWorksService
+    BlurService, HandleProjectsService, MessagesService, DbWorksService, DbProjChoiceService
   ],
   bootstrap: [AppComponent]
 })

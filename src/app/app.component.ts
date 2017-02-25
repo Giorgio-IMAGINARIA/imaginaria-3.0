@@ -60,9 +60,6 @@ export class AppComponent implements OnInit {
     @HostListener('window:load', ['$event']) onLoad(event: any) {
         window.scrollTo(0, 0);
     }
-    @HostListener('window:touchstart', ['$event']) ontouchstart(event: any) {
-        window.scrollTo(0, 0);
-    }
 
     ngOnInit(): void {
         this.blurStateString = 'inactive';

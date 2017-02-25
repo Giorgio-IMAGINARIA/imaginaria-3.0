@@ -1,7 +1,7 @@
 ﻿window.onload = function () {
 
 
-    playlist = ["/MbI/videos/StampingLogo-mobile", "/MbI/videos/StampingLogo-tablet", "/MbI/videos/StampingLogo-HD"];
+    playlist = ["./videos/StampingLogo-mobile", "./videos/StampingLogo-tablet", "./videos/StampingLogo-HD"];
     video = document.getElementById("video");
     chooseResolution()
     video.src = playlist[position] + "." + getFormatExtension();

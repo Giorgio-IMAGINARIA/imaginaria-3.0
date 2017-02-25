@@ -29,11 +29,13 @@ declare let $: any;
 export class WorksComponent implements OnInit {
     private blurStateString: string;
     private items: Array<any> = null;
+    private blurServiceListener: any;
+    private dbWorksServiceListener: any;
+
 
     constructor(private dbWorksService: DbWorksService, private blurService: BlurService, private renderer: Renderer) { }
 
     ngOnInit() {
-        // let testValue: number = this.checkDb();
         this.dbWorksService.sendRequest();
         this.checkDbWorksService();
         window.scrollTo(0, 0);
@@ -42,17 +44,21 @@ export class WorksComponent implements OnInit {
             this.blurStateString = 'active';
             $('body').css('overflow', 'hidden');
         }
-
     }
 
-    private checkDbWorksService():void{
-         this.dbWorksService.activeDbWorksStateObservable.subscribe(
+    ngOnDestroy(): void {
+        this.dbWorksServiceListener.unsubscribe();
+        this.blurServiceListener.unsubscribe();
+    }
+
+    private checkDbWorksService(): void {
+        this.dbWorksServiceListener = this.dbWorksService.activeDbWorksStateObservable.subscribe(
             response => {
                 if (response) {
                     console.log('the response for works is: ', response);
                     this.items = response;
                 } else {
-                   console.log('no response for the works');
+                    console.log('no response for the works');
                 }
             },
             error => console.log('Error! Description: ' + error)
@@ -60,7 +66,7 @@ export class WorksComponent implements OnInit {
     }
 
     private checkBlurService(): void {
-        this.blurService.activeBlurStateObservable.subscribe(
+        this.blurServiceListener = this.blurService.activeBlurStateObservable.subscribe(
             response => {
                 if (response) {
                     this.blurStateString = 'active';

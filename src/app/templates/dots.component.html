@@ -1,11 +1,4 @@
-<div id="sideNav" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter flexContainerColumnSpaceBetween blurred">
-    <a [@toBlur]="blurStateString">
-        <div id="sideNavButton0" (click)="changeProject(0)" class="sideNavButton sideNavButtonChecked0"> </div>
-    </a>
-    <a [@toBlur]="blurStateString">
-        <div id="sideNavButton1" (click)="changeProject(1)" class="sideNavButton"> </div>
-    </a>
-    <a [@toBlur]="blurStateString">
-        <div id="sideNavButton2" (click)="changeProject(2)" class="sideNavButton"> </div>
-    </a>
+<div id="sideNav" class="flexContainer flexContainerColumn flexContainerColumnHAlignCenter flexContainerColumnVAlignCenter flexContainerColumnSpaceBetween">
+    <div *ngFor="let item of items; let i = index;" [@toBlur]="blurStateString" (click)='changeProject(i)' class="sideNavButton"
+        [ngClass]="{'sideNavButtonChecked':item.isChecked}"></div>
 </div>
