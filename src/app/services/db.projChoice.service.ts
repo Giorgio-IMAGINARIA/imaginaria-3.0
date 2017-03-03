@@ -26,21 +26,26 @@ export class DbProjChoiceService {
     }
 
     sendRequest(): void {
-        console.log('send DB request projChoice: ', DbProjChoice);
-        setTimeout(() => {
-            this.setDbProjChoiceState(DbProjChoice.projectDBArray);
-        }, 1);
 
 
 
-        // this.http.get('/db/works').subscribe((data: Response) => {
-        //     try {
-        //         this.setDbWorksState(data.json().worksDBArray);
-        //     }
-        //     catch (err) {
-        //         console.log(err);
-        //     }
-        // });
+
+
+        // console.log('send DB request projChoice: ', DbProjChoice);
+        // setTimeout(() => {
+        //     this.setDbProjChoiceState(DbProjChoice.projectDBArray);
+        // }, 1);
+
+
+
+        this.http.get('/db/projects').subscribe((data: Response) => {
+            try {
+                this.setDbProjChoiceState(data.json().projectsDBArray);
+            }
+            catch (err) {
+                console.log(err);
+            }
+        });
     }
 
 }
