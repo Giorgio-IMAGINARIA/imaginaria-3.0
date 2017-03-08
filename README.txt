@@ -1,4 +1,4 @@
-IMAGINARIA WEBAPP
+# IMAGINARIA WEBAPP
 A web application written in Angular 2 + ExpressJS + MongoDB
 
 1) - git clone https://github.com/Giorgio-IMAGINARIA/imaginaria-3.0-gitHub.git
@@ -7,3 +7,5 @@ A web application written in Angular 2 + ExpressJS + MongoDB
 4) - type "npm run build" in the root directory
 5) - navigate to "http://localhost:3001/" in your browser
 6) - enjoy :)
+
+Live application at [www.imaginaria.london](www.imaginaria.london)
