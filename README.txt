@@ -8,4 +8,4 @@ A web application written in Angular 2 + ExpressJS + MongoDB
 5) - navigate to "http://localhost:3001/" in your browser
 6) - enjoy :)
 
-Live application at www.imaginaria.london
+Live application at www.phantasiae.eu
