@@ -21,7 +21,7 @@ mongooseDB.once('open', function () {
         description: String
     });
     var WorkModel = mongoose.model('work', workSchema);
-    console.log("we are connected!");
+    // console.log("we are connected!");
 });
 
 var express = require('express');
@@ -45,18 +45,18 @@ app.use(bodyParser.json());
 
 app.post('/sendmail', function (req, res) {
     var server = email.server.connect({
-        user: "testemailimaginaria@gmail.com",
-        password: "",
-        host: "smtp.gmail.com",
+        user: "An email of your choice",
+        password: "A password",
+        host: "The host",
         ssl: true
     });
     // send the message and get a callback with an error or details of the message that was sent
     var textToSend = 'Name: ' + req.body.name + '; email: ' + req.body.email + ' mobile: ' + req.body.phone + ' message: ' + req.body.message;
     server.send({
         text: textToSend,
-        from: "testemailimaginaria@gmail.com",
-        to: 'giorgio.mazzei@imaginaria.london',
-        subject: "API key request"
+        from: "An email of your choice",
+        to: 'An email to send to',
+        subject: "Some text"
     }, function (err, message) {
         if (err)
             console.log(err);
@@ -69,7 +69,7 @@ app.get('/db/projects', function (req, res) {
     Promise.resolve(res)
         .then((res) => {
             return new Promise((resolve, reject) => {
-                console.log('test projects');
+                // console.log('test projects');
                 mongooseDB.db.listCollections({ name: projectsCollectionName })
                     .next(
                     function (err, collInfo) {
@@ -77,7 +77,7 @@ app.get('/db/projects', function (req, res) {
                             reject("there was an error in the DB: " + err);
                         } else {
                             if (collInfo) {
-                                console.log('the collection exists');
+                                // console.log('the collection exists');
                                 resolve(res);
                             } else {
                                 mongooseDB.db.createCollection("projects");
@@ -93,16 +93,16 @@ app.get('/db/projects', function (req, res) {
         })
         .then((res) => {
             return new Promise((resolve, reject) => {
-                console.log('second step');
+                // console.log('second step');
                 var currentCollection = mongooseDB.db.collection(projectsCollectionName);
                 currentCollection.find({}, function (err, cursor) {
                     cursor.toArray(function (err, items) {
                         if (err) {
                             reject('there was an error in the DB: ' + err);
                         } else {
-                            console.log('success: ', items);
+                            // console.log('success: ', items);
                             var projectsDBObject = { projectsDBArray: items };
-                            console.log('here are the projects');
+                            // console.log('here are the projects');
                             res.json(projectsDBObject);
                         }
                     });
@@ -125,7 +125,7 @@ app.get('/db/works', function (req, res) {
                             reject("there was an error in the DB: " + err);
                         } else {
                             if (collInfo) {
-                                console.log('the collection exists');
+                                // console.log('the collection exists');
                                 resolve(res);
                             } else {
                                 mongooseDB.db.createCollection("works");
@@ -147,9 +147,9 @@ app.get('/db/works', function (req, res) {
                         if (err) {
                             reject('there was an error in the DB: ' + err);
                         } else {
-                            console.log('success: ', items);
+                            // console.log('success: ', items);
                             var worksDBObject = { worksDBArray: items };
-                            console.log('here are the works');
+                            // console.log('here are the works');
                             res.json(worksDBObject);
                         }
                     });

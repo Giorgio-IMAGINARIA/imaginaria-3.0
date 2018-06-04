@@ -55,10 +55,10 @@ export class WorksComponent implements OnInit {
         this.dbWorksServiceListener = this.dbWorksService.activeDbWorksStateObservable.subscribe(
             response => {
                 if (response) {
-                    console.log('the response for works is: ', response);
+                    // console.log('the response for works is: ', response);
                     this.items = response;
                 } else {
-                    console.log('no response for the works');
+                    // console.log('no response for the works');
                 }
             },
             error => console.log('Error! Description: ' + error)

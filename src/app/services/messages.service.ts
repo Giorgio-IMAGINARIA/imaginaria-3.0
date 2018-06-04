@@ -9,13 +9,13 @@ export class MessagesService {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         let stringifiedDetailsObject = JSON.stringify(details);
-        console.log('stringifiedDetailsObject: ', stringifiedDetailsObject);
-        console.log('window.location.origin', window.location.origin);
+        // console.log('stringifiedDetailsObject: ', stringifiedDetailsObject);
+        // console.log('window.location.origin', window.location.origin);
         let windowLocOrigin: string = window.location.origin;
         this.http.post(window.location.origin+'/sendmail', stringifiedDetailsObject, { headers: headers }).subscribe((data) => {
-            console.log(data);
+            // console.log(data);
             if (data.json().success) {
-                console.log('Sent successfully');
+                // console.log('Sent successfully');
             }
         })
     }

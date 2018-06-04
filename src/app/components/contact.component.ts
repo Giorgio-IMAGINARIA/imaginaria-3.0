@@ -285,12 +285,12 @@ export class ContactComponent implements OnInit {
         });
     }
     onSubmit() {
-        console.log('submit!!!');
+        // console.log('submit!!!');
         // this.submitted = true;
         this.sendMessage();
     }
     private sendMessage() {
-        console.log('the model is: ', this.model)
+        // console.log('the model is: ', this.model)
         this.messagesService.sendNew(this.model);
     }
 

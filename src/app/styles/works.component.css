@@ -45,6 +45,10 @@ article a:hover {
     width: 100%;
 }
 
+.angular-with-newlines {
+    white-space: pre-line;
+}
+
 #spaceFooter {
     width: 100%;
 }

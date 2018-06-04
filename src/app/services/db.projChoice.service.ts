@@ -20,7 +20,7 @@ export class DbProjChoiceService {
     constructor(private http: Http) { }
 
     private setDbProjChoiceState(nextState: Array<DbProjChoicePropertiesInterface>): void {
-        console.log('nextState: ', nextState);
+        // console.log('nextState: ', nextState);
         this.currentDbProjChoiceState = nextState;
         this.activeDbProjChoiceStateSubject.next(nextState);
     }

@@ -128,14 +128,14 @@ export class HomeComponent implements OnInit {
     private setScrollDistance(): void {
         let BoxH: number = window.innerHeight;
         this.currentWindowHeight = BoxH;
-        console.log('currentWindowHeight: ', this.currentWindowHeight);
+        // console.log('currentWindowHeight: ', this.currentWindowHeight);
     }
 
     private checkDbProjChoiceService(): void {
         this.dbProjChoiceServiceListener = this.dbProjChoiceService.activeDbProjChoiceStateObservable.subscribe(
             response => {
                 if (response) {
-                    console.log('the response for home is: ', response);
+                    // console.log('the response for home is: ', response);
                     for (var i = 0; i < response.length; i++) {
                         this.arrayOfProjects[i] = { description: null, href: null, title: null, urlbackground: null, isChecked: null }
                         this.arrayOfProjects[i].description = response[i].description;
@@ -148,11 +148,11 @@ export class HomeComponent implements OnInit {
                             this.arrayOfProjects[i].isChecked = false;
                         }
                     }
-                    console.log('now the currentProjectIndex is: ', this.currentProjectIndex);
+                    // console.log('now the currentProjectIndex is: ', this.currentProjectIndex);
                     this.setProjectBlock(this.currentProjectIndex, this.projectSectionElement);
-                    console.log('set the current project!!!');
+                    // console.log('set the current project!!!');
                 } else {
-                    console.log('no response for the dots');
+                    // console.log('no response for the dots');
                 }
             },
             error => console.log('Error! Description: ' + error)
@@ -208,14 +208,14 @@ export class HomeComponent implements OnInit {
             response => {
                 this.nextProjectIndex = response;
                 this.projectDelta = this.nextProjectIndex - this.currentProjectIndex;
-                console.log('this.currentProjectIndex', this.currentProjectIndex);
-                console.log('this.nextProjectIndex', this.nextProjectIndex);
-                console.log('projectDelta', this.projectDelta);
+                // console.log('this.currentProjectIndex', this.currentProjectIndex);
+                // console.log('this.nextProjectIndex', this.nextProjectIndex);
+                // console.log('projectDelta', this.projectDelta);
                 if (!this.mov && !this.blurred) {
                     this.mov = true;
                     this.slideProject();
                 } else {
-                    console.log('HOME - the screen cannot slide');
+                    // console.log('HOME - the screen cannot slide');
                 }
             },
             error => console.log('Error! Description: ' + error)
@@ -246,10 +246,10 @@ export class HomeComponent implements OnInit {
                     nextProjectToPass = this.projectSectionBeforeElement;
                     nextProjectToPassIndex = this.currentProjectIndex - 1;
                 }
-                console.log('this.currentProjectIndex', this.currentProjectIndex);
-                console.log('this.projectDelta', this.projectDelta);
-                console.log('nextProjectToPassIndex', nextProjectToPassIndex);
-                console.log('nextProjectToPass', nextProjectToPass);
+                // console.log('this.currentProjectIndex', this.currentProjectIndex);
+                // console.log('this.projectDelta', this.projectDelta);
+                // console.log('nextProjectToPassIndex', nextProjectToPassIndex);
+                // console.log('nextProjectToPass', nextProjectToPass);
                 this.setProjectBlock(nextProjectToPassIndex, nextProjectToPass);
             })
             .then(() => {

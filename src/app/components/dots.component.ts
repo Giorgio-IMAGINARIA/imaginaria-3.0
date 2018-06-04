@@ -66,7 +66,7 @@ export class Dots implements OnInit {
     this.dbProjChoiceServiceListener = this.dbProjChoiceService.activeDbProjChoiceStateObservable.subscribe(
       response => {
         if (response) {
-          console.log('the response for dots is: ', response);
+          // console.log('the response for dots is: ', response);
           for (var i = 0; i < response.length; i++) {
             this.items[i] = { description: null, href: null, title: null, urlbackground: null, isChecked: null }
             this.items[i].description = response[i].description;
@@ -80,7 +80,7 @@ export class Dots implements OnInit {
             }
           }
         } else {
-          console.log('no response for the dots');
+          // console.log('no response for the dots');
         }
       },
       error => console.log('Error! Description: ' + error)
@@ -90,7 +90,7 @@ export class Dots implements OnInit {
   private checkHandleProjectsService(): void {
     this.handleProjectsServiceListener = this.handleProjectsService.projectsStateObservable.subscribe(
       response => {
-        console.log('response from handleProjectsService-dots: ', response);
+        // console.log('response from handleProjectsService-dots: ', response);
         this.projectsState = response;
 
         for (var i = 0; i < this.items.length; i++) {

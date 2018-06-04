@@ -21,7 +21,7 @@ export class DbWorksService {
     constructor(private http: Http) { }
 
     private setDbWorksState(nextState: Array<DbWorksPropertiesInterface>): void {
-        console.log('from Imaginaria DbWorksService', nextState);
+        // console.log('from Imaginaria DbWorksService', nextState);
         this.currentDbWorksState = nextState;
         this.activeDbWorksStateSubject.next(nextState);
     }
