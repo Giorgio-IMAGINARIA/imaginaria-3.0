@@ -1,4 +1,4 @@
-IMAGINARIA WEBAPP
+IMAGINARIA WEB-APP
 A web application written in Angular 2 + ExpressJS and using MongoDB as database
 
 1) - git clone https://github.com/Giorgio-IMAGINARIA/imaginaria-3.0-gitHub.git
